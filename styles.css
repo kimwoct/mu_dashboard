@@ -889,6 +889,38 @@ header {
     background: #05579F;
 }
 
+
+@media (min-width: 350px) {
+    .lottie-banner{
+        height: 50dvh !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .lottie-banner{
+        height: 50dvh !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .lottie-banner{
+        height: 50dvh !important;
+    }
+}
+
+@media (min-width: 1150px) {
+    .lottie-banner{
+        height: 80dvh !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .lottie-banner{
+        height: 90dvh !important;
+    }
+}
+
+
 @media (max-width: 768px) {
     .swiper {
         /* height: 400px; */
