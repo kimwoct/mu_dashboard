@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* --swiper-theme-color: white !important; */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@ body {
     /* background-color: rgb(240, 249, 255); */
     background-image: url("/background.svg");
     background-repeat: no-repeat;
-    background-position: center calc(100% - 20dvh);
+    background-position: center calc(100% - 25%);
     background-size: 100%;
 }
 
@@ -332,6 +336,27 @@ header {
     color: rgb(75, 85, 99);
 }
 
+/* Primary and Secondary Showcases Section */
+
+.primary-secondary {
+    padding: 4rem 0;
+}
+
+.primary-secondary > div {
+    max-width: 1152px;
+    margin: 0 auto;
+    background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 55.78%);
+    border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 0 0;
+}
+
+.primary-secondary-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 /* Start Learning Section */
 .start-learning {
     padding: 4rem 0;
@@ -340,7 +365,7 @@ header {
 .start-learning > div {
     max-width: 1152px;
     margin: 0 auto;
-    background: linear-gradient(180.61deg, rgba(4, 112, 184, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 127.42%);
+    background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 55.78%);
     border-radius: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 2.5rem 0 0;
@@ -745,7 +770,6 @@ header {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
