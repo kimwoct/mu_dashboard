@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis - English Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="frontend.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script type="text/javascript" src="custom-scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="js/observer.js"></script>
+    <style>
+        body {
+            /* background-color:red; */
+            margin: 0px;
+            height: 100%;
+        }
+
+        #lottie {
+            /* background-color:green; */
+            width: 100%;
+            height: 100%;
+            /* display:block; */
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+            text-align: center;
+            opacity: 1;
+        }
+
+        .sticky-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sticky-banner.hidden {
+            transform: translateY(-100%);
+        }
+
+        .swiper-wrapper {
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .slide-content {
+            padding: 10px 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero-image {
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-logo {
+            height: 100%;
+            width: auto;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1A71AB;
+        }
+
+        .hero-slogan {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .swiper-slide {
+            transition: opacity 0.3s ease;
+        }
+
+        .swiper-slide:hover {
+            opacity: 0.9;
+        }
+    </style>
+
+    <!-- <script type="text/javascript" src="js/splitting.js"></script> -->
+</head>
+
+<body>
+    <div class="sticky-banner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="hero-title hero-background">
+                            <div class="hero-image">
+                                <img src="/oasis.svg" alt="Oasis Logo" class="hero-logo">
+                            </div>
+                            <div class="hero-text">
+                                <span class="hero-subtitle">PlatformOpen English Textbook series transformed</span>
+                                <span class="hero-slogan">Into interactive, online and multimedia components for
+                                    motivated learning</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="hero-title hero-background">
+                            <div class="hero-image">
+                                <img src="/oasis.svg" alt="Oasis Logo" class="hero-logo">
+                            </div>
+                            <div class="hero-text">
+                                <span class="hero-subtitle">All-In-One Open English Learning Platform</span>
+                                <span class="hero-slogan">Take learning to the next level with AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Include plugin after Swiper -->
+    <script>
+        /* ========Debugger plugin, simple demo plugin to console.log some of callbacks======== */
+        function myPlugin({ swiper, extendParams, on }) {
+            extendParams({
+                debugger: false,
+            });
+
+            on('init', () => {
+                if (!swiper.params.debugger) return;
+                console.log('init');
+            });
+            on('click', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('click');
+            });
+            on('tap', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('tap');
+            });
+            on('doubleTap', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('doubleTap');
+            });
+            on('sliderMove', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('sliderMove');
+            });
+            on('mouseenter', () => {
+                if (!swiper.params.debugger) return;
+                console.log('mouseenter');
+                swiper.slideNext();
+            });
+            on('slideChange', () => {
+                if (!swiper.params.debugger) return;
+                console.log(
+                    'slideChange',
+                    swiper.previousIndex,
+                    '->',
+                    swiper.activeIndex
+                );
+            });
+            on('slideChangeTransitionStart', () => {
+                if (!swiper.params.debugger) return;
+                console.log('slideChangeTransitionStart');
+            });
+            on('slideChangeTransitionEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('slideChangeTransitionEnd');
+            });
+            on('transitionStart', () => {
+                if (!swiper.params.debugger) return;
+                console.log('transitionStart');
+            });
+            on('transitionEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('transitionEnd');
+            });
+            on('fromEdge', () => {
+                if (!swiper.params.debugger) return;
+                console.log('fromEdge');
+            });
+            on('reachBeginning', () => {
+                if (!swiper.params.debugger) return;
+                console.log('reachBeginning');
+            });
+            on('reachEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('reachEnd');
+            });
+        }
+    </script>
+
+    <script>
+        // Init Swiper
+        var swiper = new Swiper('.swiper', {
+            modules: [myPlugin],
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            speed: 1000,
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () {
+                    this.el.style.opacity = 1;
+                }
+            },
+            debugger: true,
+        });
+
+        // Hide banner on scroll down, show on scroll up
+        let lastScrollTop = 0;
+        const banner = document.querySelector('.sticky-banner');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                banner.classList.add('hidden');
+            } else {
+                // Scrolling up
+                banner.classList.remove('hidden');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+
+        // Make slides clickable
+        document.querySelectorAll('.swiper-slide').forEach(slide => {
+            slide.addEventListener('click', () => {
+                // Scroll to top of page
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add trigger area event listeners
+        document.getElementById('slidePrev').addEventListener('mouseenter', function () {
+            swiper.slidePrev();
+        });
+
+        document.getElementById('slideNext').addEventListener('mouseenter', function () {
+            swiper.slideNext();
+        });
+
+        // Add hover effect for trigger areas
+        const triggerAreas = document.querySelectorAll('.slide-trigger-area');
+        triggerAreas.forEach(area => {
+            area.addEventListener('mouseenter', function () {
+                this.style.background = 'rgba(0, 0, 0, 0.05)';
+            });
+            //   area.addEventListener('mouseleave', function() {
+            //     this.style.background = 'rgba(255, 255, 255, 0.01)';
+            //   });
+        });
+    </script>
+</body>
+
+</html>
