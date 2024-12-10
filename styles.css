@@ -3,10 +3,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    /* --swiper-theme-color: white !important; */
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -765,6 +761,7 @@ header {
 
 .swiper-wrapper {
     transition-timing-function: ease-in;
+    height: auto !important;
 }
 
 .swiper-slide {
@@ -880,43 +877,170 @@ header {
     transform: translateY(-2px);
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: #05579F;
-}
-
 .swiper-pagination-bullet-active {
     background: #05579F;
 }
 
 
 @media (min-width: 350px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: 15dvh; /* Set a default value */
+        --scale: 1.9;
+    }
+    #sand_background{
+        height: auto;
+    }
     .lottie-banner{
         height: 50dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (min-width: 450px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: 22dvh; /* Set a default value */
+        --scale: 1.7;
+    }
+    #sand_background{
+        height: auto;
+    }
+    .lottie-banner{
+        height: 50dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
     }
 }
 
 @media (min-width: 500px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(13vh); /* Set a default value */
+        --scale: 1.7;
+    }
+    #sand_background{
+        height: auto;
+    }
     .lottie-banner{
         height: 50dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (min-width: 600px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(17vh); /* Set a default value */
+        --scale: 2.2;
+    }
+    #sand_background{
+        height: 70dvh;
+    }
+    .lottie-banner{
+        height: 75dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
     }
 }
 
 @media (min-width: 700px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(17vh); /* Set a default value */
+        --scale: 2;
+    }
+    #sand_background{
+        height: 70dvh;
+    }
     .lottie-banner{
-        height: 50dvh !important;
+        height: 75dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (min-width: 850px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(17vh); /* Set a default value */
+        --scale: 2;
+    }
+    #sand_background{
+        height: 70dvh;
+    }
+    .lottie-banner{
+        height: 75dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (min-width: 1125px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(17vh); /* Set a default value */
+        --scale: 1.5;
+    }
+    #sand_background{
+        height: 70dvh;
+    }
+    .lottie-banner{
+        height: 75dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
     }
 }
 
 @media (min-width: 1150px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(17vh); /* Set a default value */
+        --scale: 1.5;
+    }
+    #sand_background{
+        height: auto;
+    }
     .lottie-banner{
         height: 80dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
     }
 }
 
 @media (min-width: 1440px) {
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(17vh); /* Set a default value */
+        --scale: 1.5;
+    }
+    #sand_background{
+        height: auto;
+    }
     .lottie-banner{
         height: 90dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
     }
 }
 
@@ -939,3 +1063,117 @@ header {
     }
     
 }
+
+svg {
+    width: 100%; /* Fill container width */
+    height: 100%; /* Fill container height */
+}
+
+#lottie1 {
+    transform: translate3d(0px, var(--translate-y), 0px) scale(var(--scale))!important;
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(25vh); /* Set a default value */
+        --scale: 2.5;
+    }
+    #sand_background{
+        height: auto;
+    }
+    .lottie-banner{
+        height: 90dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+    
+  }
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(25vh); /* Set a default value */
+        --scale: 2.5;
+    }
+    #sand_background{
+        height: auto;
+    }
+    .lottie-banner{
+        height: 90dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+    
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(10vh); /* Set a default value */
+        --scale: 2.0;
+    }
+    #sand_background{
+        height: auto;
+    }
+    .lottie-banner{
+        height: 60dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(60vh - 100px);
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(1vh); /* Set a default value */
+        --scale: 2.0;
+    }
+    #sand_background{
+        height: auto;
+    }
+    .lottie-banner{
+        height: 55dvh !important;
+    }
+    .banner-swiper{
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(55vh - 100px);
+    }
+    
+  }
