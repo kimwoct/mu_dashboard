@@ -17,9 +17,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     /* margin: 0 auto; */
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     position: relative;
 }
 
@@ -33,10 +33,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    /* flex-wrap: wrap; */
-    padding: 0.5rem;
-    width: 95dvw;
+    width: 100%;
 }
 
 .logo-wrapper {
@@ -46,7 +43,7 @@ header {
 
 .logo-image {
     display: block;
-    width: 224px;
+    width: 100%;
     height: auto;
     object-fit: contain;
 }
@@ -80,7 +77,7 @@ header {
     padding: 2rem;
 }
 
-.hero-image { 
+.hero-image {
     max-width: 400px;
 }
 
@@ -166,7 +163,7 @@ header {
 }
 
 /* Features Section */
-.features > div {
+.features>div {
     max-width: 1152px;
     margin: 0 auto;
     background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 46.87%);
@@ -209,7 +206,7 @@ header {
     background: white;
     border-radius: 0.5rem;
     padding: 1.5rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
@@ -233,7 +230,7 @@ header {
     padding: 4rem 0;
 }
 
-.primary-secondary > div {
+.primary-secondary>div {
     max-width: 1152px;
     margin: 0 auto;
     background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 55.78%);
@@ -253,7 +250,7 @@ header {
     padding: 4rem 0;
 }
 
-.start-learning > div {
+.start-learning>div {
     max-width: 1152px;
     margin: 0 auto;
     background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 55.78%);
@@ -304,7 +301,7 @@ header {
     padding: 4rem 0;
 }
 
-.contact > div {
+.contact>div {
     margin: 0 auto;
 }
 
@@ -504,6 +501,7 @@ header {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -515,6 +513,7 @@ header {
         transform: translateX(0);
         opacity: 1;
     }
+
     to {
         transform: translateX(100%);
         opacity: 0;
@@ -541,6 +540,7 @@ header {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -568,6 +568,7 @@ header {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -697,7 +698,8 @@ header {
     z-index: 1;
     will-change: transform;
     transition-timing-function: ease-out;
-    background-color: white;/*#7FBB2A*/
+    background-color: white;
+    /*#7FBB2A*/
 }
 
 .swiper-slide-active .slide-content {
@@ -755,421 +757,286 @@ header {
     background: #05579F;
 }
 
-
-@media (min-width: 350px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: 15dvh; /* Set a default value */
-        --scale: 1.9;
-    }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
-        height: 50dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
-@media (min-width: 450px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: 22dvh; /* Set a default value */
-        --scale: 1.7;
-    }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
-        height: 50dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
-@media (min-width: 500px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(13vh); /* Set a default value */
-        --scale: 1.7;
-    }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
-        height: 50dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
-@media (min-width: 600px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(17vh); /* Set a default value */
-        --scale: 2.2;
-    }
-    #sand_background{
-        height: 70dvh;
-    }
-    .lottie-banner{
-        height: 75dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
-@media (min-width: 700px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(17vh); /* Set a default value */
-        --scale: 2;
-    }
-    #sand_background{
-        height: 70dvh;
-    }
-    .lottie-banner{
-        height: 75dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
-@media (min-width: 850px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(17vh); /* Set a default value */
-        --scale: 2;
-    }
-    #sand_background{
-        height: 70dvh;
-    }
-    .lottie-banner{
-        height: 75dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
-@media (min-width: 1125px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(17vh); /* Set a default value */
-        --scale: 1.5;
-    }
-    #sand_background{
-        height: 70dvh;
-    }
-    .lottie-banner{
-        height: 75dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
-@media (min-width: 1150px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(17vh); /* Set a default value */
-        --scale: 1.5;
-    }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
-        height: 80dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-    .hero-slogan{
-        width: 50vw;
-        bottom: 15%;
-    }
-}
-
-@media (min-width: 1440px) {
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(13vh); /* Set a default value */
-        --scale: 1.3;
-    }
-
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
-        height: 90dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-}
-
 svg {
-    width: 100%; /* Fill container width */
-    height: 100%; /* Fill container height */
+    width: 100%;
+    /* Fill container width */
+    height: 100%;
+    /* Fill container height */
 }
 
 #lottie1 {
-    transform: translate3d(0px, var(--translate-y), 0px) scale(var(--scale))!important;
+    transform: translate3d(0px, var(--translate-y), 0px) scale(var(--scale)) !important;
 }
 
-
-@media (max-width: 3800px) {
-    .hero-background {
-        /* width: 90%; */
-    }
-
-    .title-text {
-        /* font-size: 2.25rem; */
-        font-weight: bold;
-    }
-    
-    .hero-subtitle {
-        /* font-size: 2rem; */
-        /* font-size: 2dvh; */
-        font-weight: 900;
-    }
+#sand_background {
+    height: auto;
 }
 
-@media (max-width: 1200px) {
-    .hero-background {
-        width: 90%;
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(25vh);
+        /* Set a default value */
+        --scale: 2.5;
     }
 
-    .title-text {
-        /* font-size: 2.25rem; */
-        font-weight: bold;
-    }
-    
-    .hero-subtitle {
-        /* font-size: 2rem; */
-        /* font-size: 2dvh; */
-        font-weight: 900;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo-container {
-        justify-content: space-between;
-        gap: 1.5rem;
+    .lottie-banner {
+        height: 90dvh !important;
     }
 
-    .logo-image {
-        width: 100px;
+    .banner-swiper {
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
     }
 
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
+    .elementor-heading-title {
+        font-size: xx-large;
     }
 
-    .hero-image {
-        max-width: 6dvh;
-    }
-
-    .hero-text{
-        display: flex;
-        flex-direction: column;
-        /* gap: 1rem; */
-    }
-
-    .hero {
-        padding: 6rem 0;
-    }
-
-    .hero-background {
-        /* height: 8dvh; */
-        padding: 0 2rem;
-    }
-    
-    .hero-title {
-        height: 6.5dvh;
-    }
-    
-    .hero-subtitle {
-        /* font-size: 1dvh; */
-        /* font-size: 3rem; */
-        /* font-weight: 900; */
-        font-size: x-small;
-    }
-
-    .hero-slogan{
-        font-size: small;
+    .hero-slogan {
         width: 50vw;
-    }
-
-    .features-description {
-        max-width: 90%;
-        margin: 0 auto 2rem;
-    }
-
-    .features-grid,
-    .learning-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .slide-content img {
-        max-width: 200px;
-    }
-
-    .slide-info h3 {
+        bottom: 15%;
         font-size: 2rem;
     }
 
-    .slide-info p {
-        font-size: 1rem;
+    .primary-secondary .swiper-slide{
+        min-height: 35dvh;
+        height: auto;
     }
 }
-
-@media (min-width: 1024px) {
-    .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-}
-
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
 
-@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-  
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(25vh); /* Set a default value */
+        --translate-y: calc(25vh);
+        /* Set a default value */
         --scale: 2.5;
     }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
+
+    .lottie-banner {
         height: 90dvh !important;
     }
-    .banner-swiper{
+
+    .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
         height: calc(100vh - 100px);
     }
+
     .elementor-heading-title {
         font-size: xx-large;
     }
-    .hero-slogan{
+
+    .hero-slogan {
         width: 50vw;
         bottom: 15%;
+        font-size: 1.5rem;
     }
-  }
 
+    .primary-secondary .swiper-slide{
+        min-height: 45dvh;
+        height: auto;
+    }
+}
 
 /* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
 */
+@media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(25vh); /* Set a default value */
-        --scale: 2.5;
-    }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
-        height: 90dvh !important;
-    }
-    .banner-swiper{
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
-    }
-    .elementor-heading-title {
-        font-size: xx-large;
-    }
-    .hero-slogan{
-        width: 50vw;
-        bottom: 15%;
-		font-size: 1.5rem;
-    }
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
-    
-    /* CSS */
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(10vh); /* Set a default value */
+        --translate-y: calc(10vh);
+        /* Set a default value */
         --scale: 2.0;
     }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
+
+    .lottie-banner {
         height: 60dvh !important;
     }
-    .banner-swiper{
+
+    .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
         height: calc(60vh - 100px);
     }
+
     .elementor-heading-title {
         font-size: x-large;
     }
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
-    
+
+    .hero-slogan {
+        width: 50vw;
+        bottom: 15%;
+        font-size: 1rem;
+    }
+
+    .primary-secondary .swiper-slide{
+        min-height: 50dvh;
+        height: auto;
+    }
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(2.5vh); /* Set a default value */
+        --translate-y: calc(2.5vh);
+        /* Set a default value */
         --scale: 2.5;
     }
-    #sand_background{
-        height: auto;
-    }
-    .lottie-banner{
+
+    .lottie-banner {
         height: 55dvh !important;
     }
-    .banner-swiper{
+
+    .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
         height: calc(55vh - 100px);
     }
+
     .elementor-heading-title {
         font-size: x-large;
     }
-    
-  }
+
+    .hero-slogan {
+        width: 50vw;
+        bottom: 30%;
+        font-size: 1rem;
+    }
+
+    .primary-secondary .swiper-slide{
+        min-height: 45dvh;
+        height: auto;
+    }
+}
+
+
+
+
+@media (max-width: 1023px) and (orientation: landscape){
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(2.5vh);
+        /* Set a default value */
+        --scale: 120%;
+    }
+
+    .lottie-banner {
+        height: 90dvh !important;
+    }
+
+    .banner-swiper {
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+
+    .hero-slogan {
+        width: 50vw;
+        bottom: 30%;
+        font-size: 1rem;
+    }
+
+    .primary-secondary .swiper-slide{
+        min-height: 120dvh;
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape){
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(20vh);
+        /* Set a default value */
+        --scale: 1.5;
+    }
+
+    .lottie-banner {
+        height: 90dvh !important;
+    }
+
+    .banner-swiper {
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+
+    .hero-slogan {
+        width: 50vw;
+        bottom: 15%;
+        font-size: 2rem;
+    }
+
+    .primary-secondary .swiper-slide{
+        min-height: 50dvh;
+        height: auto;
+    }
+}
+
+@media (min-width: 1500px) and (orientation: landscape){
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --translate-y: calc(20vh);
+        /* Set a default value */
+        --scale: 1.2;
+    }
+
+    .lottie-banner {
+        height: 90dvh !important;
+    }
+
+    .banner-swiper {
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+
+    .hero-slogan {
+        width: 50vw;
+        bottom: 15%;
+        font-size: 2rem;
+    }
+
+    .primary-secondary .swiper-slide{
+        min-height: 50dvh;
+        height: auto;
+    }
+}
+
+@media screen and (max-aspect-ratio:3/2){
+    .primary-secondary .swiper-slide{
+        min-height: 45dvh;
+        height: auto;
+    }
+}
