@@ -19,7 +19,7 @@ body {
 .container {
     /* max-width: 1200px; */
     /* margin: 0 auto; */
-    padding: 1rem 1rem;
+    /* padding: 1rem 1rem; */
     position: relative;
 }
 
@@ -43,9 +43,9 @@ header {
 
 .logo-image {
     display: block;
-    width: 100%;
     height: auto;
     object-fit: contain;
+    margin: 5px;
 }
 
 /* Hero Section */
@@ -82,8 +82,8 @@ header {
 }
 
 .hero-logo {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 3dvh;
 }
 
 .hero-title {
@@ -117,7 +117,9 @@ header {
 
 .hero-subtitle {
     flex: 1;
-    /* font-size: 2.25rem; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
     display: block;
     color: #05579F;
 }
@@ -198,7 +200,7 @@ header {
 
 .features-grid {
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -640,7 +642,7 @@ header {
 
 .swiper-wrapper {
     transition-timing-function: ease-in;
-    height: auto !important;
+    /* height: auto !important; */
 }
 
 .swiper-slide {
@@ -652,6 +654,13 @@ header {
     position: relative;
     will-change: transform;
     display: flex !important;
+}
+
+.swiper-slide-container {
+    padding: 0rem 2rem 2rem 2rem;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
 }
 
 .swiper-slide-active {
@@ -764,12 +773,61 @@ svg {
     /* Fill container height */
 }
 
+#lottie {
+    transform: translate3d(var(--tranlate-x), var(--translate-y), 0px) scale(var(--scale)) !important;
+}
+
 #lottie1 {
-    transform: translate3d(0px, var(--translate-y), 0px) scale(var(--scale)) !important;
+    transform: translate3d(0px, var(--translate-y1), 0px) scale(var(--scale1)) !important;
+}
+
+.lottie-banner{
+    height: 70dvh !important;
 }
 
 #sand_background {
     height: auto;
+}
+
+@media (min-width: 1500px) and (orientation: landscape){
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --tranlate-x: calc(10dvw);
+        --translate-y: calc(0dvh);
+        --translate-y1: calc(10dvh);
+        /* Set a default value */
+        --scale: 0.6;
+        --scale1: 1.0;
+    }
+
+    .lottie-banner {
+        height: 90dvh !important;
+    }
+
+    .banner-swiper {
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(100vh - 100px);
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+
+    .hero-slogan {
+        width: 50dvw;
+        bottom: 25dvh;
+        font-size: 2rem;
+    }
+
+    .primary-secondary .swiper-slide{
+        min-height: 50dvh;
+        height: auto;
+    }
+
+    /* .swiper-wrapper {
+        max-width: 35dvh !important;
+    } */
 }
 
 /* 
@@ -781,9 +839,24 @@ svg {
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(25vh);
+        --tranlate-x: calc(15dvw);
+        --translate-y: calc(-5dvh);
+        --translate-y1: calc(6dvh);
         /* Set a default value */
-        --scale: 2.5;
+        --scale: 0.5;
+        --scale1: 1.5;
+    }
+
+    .swiper{
+        max-height: 40dvh !important;
+    }
+
+    .hero-subtitle {
+        /* margin-left: 1rem !important; */
+        margin-left: 1rem !important;
+        /* max-width: 45dvw; */
+        max-width: 45dvw;
+        font-size: 1.5rem;
     }
 
     .lottie-banner {
@@ -801,7 +874,7 @@ svg {
 
     .hero-slogan {
         width: 50vw;
-        bottom: 15%;
+        bottom: 30dvh;
         font-size: 2rem;
     }
 
@@ -820,18 +893,56 @@ svg {
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(25vh);
+        --tranlate-x: calc(20dvw);
+        --translate-y: calc(-5dvh);
+        --translate-y1: calc(3dvh);
         /* Set a default value */
-        --scale: 2.5;
+        --scale: 0.6;
+        --scale1: 2;
+    }
+
+    .container{
+        padding: 0 !important;
+    }
+
+    .logo-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        width: 40dvw !important;
+        align-self: baseline;
+    }
+
+    .hero-wrapper {
+        background-color: #EBEBEB;
+        width: 100dvw !important;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .hero-logo {
+        padding-left: 1rem;
+    }
+    
+    .hero-subtitle{
+        font-size: larger !important;
+        width: 70dvw !important;
+        align-self: center;
+        display: inline;
     }
 
     .lottie-banner {
-        height: 90dvh !important;
+        height: 50dvh !important;
     }
 
     .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
+        height: calc(50dvh - 100px);
     }
 
     .elementor-heading-title {
@@ -859,9 +970,9 @@ svg {
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(10vh);
+        --translate-y1: calc(10vh);
         /* Set a default value */
-        --scale: 2.0;
+        --scale1: 2.0;
     }
 
     .lottie-banner {
@@ -899,9 +1010,47 @@ svg {
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(2.5vh);
+        --tranlate-x: calc(20dvw);
+        --translate-y: calc(-5dvh);
+        --translate-y1: calc(3dvh);
         /* Set a default value */
-        --scale: 2.5;
+        --scale: 0.5;
+        --scale1: 2;
+    }
+
+    .container{
+        padding: 0 !important;
+    }
+
+    .logo-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        width: 40dvw !important;
+        align-self: baseline;
+    }
+
+    .hero-wrapper {
+        background-color: #EBEBEB;
+        width: 100dvw !important;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .hero-logo {
+        padding-left: 1rem;
+    }
+    
+    .hero-subtitle{
+        font-size: small;
+        width: 70dvw !important;
+        align-self: center;
+        display: inline;
     }
 
     .lottie-banner {
@@ -910,7 +1059,7 @@ svg {
 
     .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(55vh - 100px);
+        height: calc(40vh - 100px);
     }
 
     .elementor-heading-title {
@@ -929,25 +1078,51 @@ svg {
     }
 }
 
-
-
-
 @media (max-width: 1023px) and (orientation: landscape){
     /* CSS */
     :root {
-        /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(2.5vh);
-        /* Set a default value */
-        --scale: 120%;
+         /* --swiper-theme-color: transparent !important; */
+         --tranlate-x: calc(20dvw);
+         --translate-y: calc(-5dvh);
+         --translate-y1: calc(10dvh);
+         /* Set a default value */
+         --scale: 0.6;
+         --scale1: 1.0;
+         --lottie-banner-height: 100dvh !important;
+    }
+
+    .logo-wrapper {
+        width: 40dvw !important;
+    }
+
+    .hero-wrapper {
+        display: flex !important;
+        padding: 5px 5px !important;
+        text-align: left !important;
+        align-items: center;
+        width: auto !important;
+    }
+
+    .hero-logo{
+        height: 12dvh !important;
+    }
+
+    .hero-subtitle{
+        font-size: large !important;
+        align-self: center;
+        text-align: center;
+        display: inline;
+        margin: 0 1rem 0 1rem;
+        width: 25dvw;
     }
 
     .lottie-banner {
-        height: 90dvh !important;
+        height: var(--lottie-banner-height) !important;
     }
 
     .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
+        height: calc(var(--lottie-banner-height) - 100px);
     }
 
     .elementor-heading-title {
@@ -970,22 +1145,49 @@ svg {
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(20vh);
+        --tranlate-x: calc(20dvw);
+        --translate-y: calc(-5dvh);
+        --translate-y1: calc(15dvh);
         /* Set a default value */
-        --scale: 1.5;
+        --scale: 0.6;
+        --scale1: 1.1;
+        --lottie-banner-height: 80dvh !important;
+    }
+
+    .container{
+        padding: 0 !important;
     }
 
     .lottie-banner {
-        height: 90dvh !important;
+        height: var(--lottie-banner-height);
     }
 
     .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
+        height: calc(var(--lottie-banner-height) - 100px);
     }
 
     .elementor-heading-title {
         font-size: xx-large;
+    }
+
+    .hero-wrapper {
+        display: flex !important;
+        padding: 5px 0 !important;
+        text-align: left !important;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .hero-logo{
+        height: 6dvh !important;
+    }
+
+    .hero-subtitle{
+        font-size: large !important;
+        align-self: center;
+        display: inline;
+        margin: 0 1rem;
     }
 
     .hero-slogan {
@@ -1000,26 +1202,57 @@ svg {
     }
 }
 
-@media (min-width: 1500px) and (orientation: landscape){
+/* 
+  ##Device = Tablets, Ipads Pro (landscape)
+  ##Screen = B/w 1366px x 1024px
+*/
+@media (min-width: 1366px) and (min-height: 1024px) and (orientation: landscape){
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y: calc(20vh);
+        --tranlate-x: calc(20dvw) !important;
+        --translate-y: calc(-5dvh) !important;
+        --translate-y1: calc(10dvh) !important;
         /* Set a default value */
-        --scale: 1.2;
+        --scale: 0.6 !important;
+        --scale1: 1.5 !important;
+        --lottie-banner-height: 80dvh !important;
+    }
+
+    .container{
+        padding: 0 !important;
     }
 
     .lottie-banner {
-        height: 90dvh !important;
+        height: var(--lottie-banner-height);
     }
 
     .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
+        height: calc(var(--lottie-banner-height) - 100px);
     }
 
     .elementor-heading-title {
         font-size: xx-large;
+    }
+
+    .hero-wrapper {
+        display: flex !important;
+        padding: 5px 0 !important;
+        text-align: left !important;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .hero-logo{
+        height: 6dvh !important;
+    }
+
+    .hero-subtitle{
+        font-size: large !important;
+        align-self: center;
+        display: inline;
+        margin: 0 1rem;
     }
 
     .hero-slogan {
