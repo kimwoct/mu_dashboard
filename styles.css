@@ -1,6 +1,11 @@
 /* Base styles */
 * {
     box-sizing: border-box;
+    --grid-minmax-width: 300px;
+    --x32-padding: 32px;
+    --x24-padding: 24px;
+    --x16-padding: 16px;
+    --x8-padding: 8px;
 }
 
 body {
@@ -16,16 +21,65 @@ body {
     background-size: 100%;
 }
 
+body * {
+    border: #0470B8 solid 1px;
+}
+
+body>section {
+    /* border: red solid 1px; */
+    padding-left: var(--x16-padding) !important;
+    padding-right: var(--x16-padding) !important;
+}
+
+section>div {
+    padding-left: var(--x16-padding) !important;
+    padding-right: var(--x16-padding) !important;
+}
+
+h1 {
+    display: block;
+    font-size: 1.7rem;
+    margin-top: 8px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+p {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.word {
+    display: inline-block;
+    /* Allows wrapping */
+    overflow-wrap: break-word;
+    /* Breaks long words if necessary */
+    word-wrap: break-word;
+    /* Older support for word wrapping */
+    white-space: normal;
+    /* Allows text to wrap normally */
+}
+
 .container {
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
-    /* padding: 1rem 1rem; */
     position: relative;
+}
+
+.large-title {
+    display: block;
+}
+
+.small-title {
+    display: none;
 }
 
 /* Header */
 header {
-    padding: 1rem;
+    padding: var(--x16-padding);
     background-color: white;
 }
 
@@ -45,13 +99,12 @@ header {
     display: block;
     height: auto;
     object-fit: contain;
-    margin: 5px;
+    margin: var(--x8-padding);
 }
 
 /* Hero Section */
 .hero {
     background-color: rgb(37, 99, 235);
-    padding: 0rem 0;
     color: white;
     position: relative;
     overflow: hidden;
@@ -60,10 +113,10 @@ header {
 .hero-background {
     /*height: 124px;*/
     margin: 0 auto;
-    padding: 0.5rem 1.5rem;
+    padding: var(--x16-padding) var(--x24-padding);
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
+    border-radius: var(--x16-padding);
     backdrop-filter: blur(4px);
 }
 
@@ -71,10 +124,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: var(--x24-padding);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: var(--x24-padding);
 }
 
 .hero-image {
@@ -91,14 +144,11 @@ header {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--x24-padding);
 }
 
 .hero-title {
     position: absolute;
-    /* width: 100%; */
-    /*height: 124px;*/
-    /* left: 0; */
     top: 0;
     display: flex;
     flex-direction: row;
@@ -133,7 +183,7 @@ header {
     width: 30%;
     text-align: left;
     z-index: 999;
-    padding-left: 2rem;
+    padding-left: var(--x24-padding);
 }
 
 .underwater-scene {
@@ -169,9 +219,9 @@ header {
     max-width: 1152px;
     margin: 0 auto;
     background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 46.87%);
-    border-radius: 1.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+    padding: var(--x24-padding) 0;
 }
 
 .section-title {
@@ -179,18 +229,19 @@ header {
     font-size: 1.875rem;
     font-weight: bold;
     color: rgb(30, 64, 175);
-    margin-bottom: 3rem;
+    margin-bottom: var(--x24-padding);
 }
 
 .features-description {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem;
+    /* max-width: 800px; */
+    /* margin: 0 auto 3rem; */
     color: rgb(75, 85, 99);
+    padding: var(--x24-padding) 0;
 }
 
 .features-description p {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--x24-padding);
     line-height: 1.6;
 }
 
@@ -200,21 +251,21 @@ header {
 
 .features-grid {
     display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--x24-padding);
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-minmax-width), 1fr));
 }
 
 .feature-card {
     background: white;
     border-radius: 0.5rem;
-    padding: 1.5rem;
+    padding: var(--x24-padding);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
     height: 10rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    border-radius: var(--x8-padding);
+    margin-bottom: var(--x16-padding);
 }
 
 .feature-title {
@@ -223,41 +274,41 @@ header {
     margin-bottom: 0.5rem;
 }
 
-.feature-description {
-    color: rgb(75, 85, 99);
+.nt-flip-desc {
+    align-content: center;
 }
 
 /* Primary and Secondary Showcases Section */
 .primary-secondary {
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .primary-secondary>div {
     max-width: 1152px;
     margin: 0 auto;
     background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 55.78%);
-    border-radius: 1.5rem 1.5rem 0 0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: var(--x24-padding) var(--x24-padding) 0 0;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
     padding: 2.5rem 0 0;
 }
 
 .primary-secondary-grid {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--x24-padding);
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-minmax-width), 1fr));
 }
 
 /* Start Learning Section */
 .start-learning {
-    padding: 4rem 0;
+    padding-bottom: 3rem;
 }
 
-.start-learning>div {
+.start-learning > div {
     max-width: 1152px;
     margin: 0 auto;
     background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 55.78%);
-    border-radius: 1.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: var(--x24-padding) var(--x24-padding) 0 0;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
     padding: 2.5rem 0 0;
 }
 
@@ -271,7 +322,7 @@ header {
 
 .learning-grid {
     display: grid;
-    gap: 2rem;
+    gap: var(--x24-padding);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -295,12 +346,12 @@ header {
     background: #7FBB2A;
     border: none;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: var(--x16-padding) var(--x24-padding);
 }
 
 /* Contact Section */
 .contact {
-    padding: 4rem 0;
+    padding-bottom: var(--x24-padding);
 }
 
 .contact>div {
@@ -311,32 +362,32 @@ header {
     max-width: 1152px;
     margin: 0 auto;
     background: rgba(225, 243, 255, 1);
-    border-radius: 1.5rem;
+    border-radius: var(--x24-padding) var(--x24-padding) 0 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 .contact-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: var(--x24-padding);
 }
 
 .contact-form-section {
-    padding: 2.5rem;
+    padding: var(--x24-padding);
 }
 
 .contact-title {
     font-size: 2.25rem;
     font-weight: bold;
     color: rgb(37, 99, 235);
-    margin-bottom: 2rem;
+    margin-bottom: var(--x24-padding);
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: var(--x24-padding);
+    margin-bottom: var(--x24-padding);
 }
 
 .form-group input,
@@ -392,7 +443,7 @@ header {
 }
 
 .suggestion-section {
-    padding: 2.5rem;
+    padding: var(--x24-padding);
     position: relative;
     /* min-height: 200px; */
     display: flex;
@@ -401,8 +452,8 @@ header {
 
 .suggestion-text {
     background-color: #C6E8FF;
-    padding: 0 2rem 2rem 2rem;
-    border-radius: 8px;
+    padding: 0 var(--x16-padding) var(--x24-padding) var(--x24-padding);
+    border-radius: var(--x8-padding);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -412,24 +463,24 @@ header {
     font-size: 1.875rem;
     font-weight: bold;
     color: rgb(37, 99, 235);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--x24-padding);
 }
 
 .suggestion-image {
     width: 100%;
     max-width: 400px;
     margin: 0 auto -1.5rem;
-    border-radius: 1rem;
+    border-radius: var(--x8-padding);
 }
 
 .try-now-button {
     width: auto;
-    padding: 1rem 2rem;
+    padding: var(--x16-padding) var(--x24-padding);
     margin-top: auto;
     background: rgb(139, 195, 74);
     color: white;
     border: none;
-    border-radius: 1rem;
+    border-radius: var(--x8-padding);
     font-weight: 500;
     font-size: 1.125rem;
     cursor: pointer;
@@ -449,7 +500,7 @@ header {
 
 .feedback-text span {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--x16-padding);
 }
 
 .feedback-text .emphasis {
@@ -459,18 +510,18 @@ header {
 /* Toast Notifications */
 .toast-container {
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: var(--x16-padding);
+    right: var(--x16-padding);
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--x16-padding);
 }
 
 .toast {
     background: white;
-    border-radius: 0.5rem;
-    padding: 1rem;
+    border-radius: var(--x8-padding);
+    padding: var(--x16-padding);
     min-width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: toast-slide-in 0.3s ease-out;
@@ -591,7 +642,7 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1.5rem;
+    padding-bottom: var(--x24-padding);
 }
 
 .elementor-heading-title [style*="color:#f29b54"] {
@@ -633,8 +684,8 @@ header {
 
 .swiper {
     width: 100%;
-    /* height: 500px; */
-    margin-bottom: 2rem;
+    height: calc(100% - 44px - 32px);
+    /* margin-bottom: 2rem; */
     position: relative;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -650,14 +701,13 @@ header {
     font-size: 18px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     position: relative;
     will-change: transform;
     display: flex !important;
 }
 
 .swiper-slide-container {
-    padding: 0rem 2rem 2rem 2rem;
     width: 100%;
     max-width: 1200px;
     position: relative;
@@ -698,17 +748,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    /* padding: 2rem; */
+    gap: var(--x24-padding);
     width: 100%;
-    /* max-width: 1200px; */
     margin: 0 auto;
     position: relative;
     z-index: 1;
     will-change: transform;
     transition-timing-function: ease-out;
     background-color: white;
-    /*#7FBB2A*/
 }
 
 .swiper-slide-active .slide-content {
@@ -766,6 +813,10 @@ header {
     background: #05579F;
 }
 
+swiper-pagination {
+    bottom: var(--swiper-pagination-bottom, 8px);
+}
+
 svg {
     width: 100%;
     /* Fill container width */
@@ -781,7 +832,7 @@ svg {
     transform: translate3d(0px, var(--translate-y1), 0px) scale(var(--scale1)) !important;
 }
 
-.lottie-banner{
+.lottie-banner {
     height: 70dvh !important;
 }
 
@@ -789,7 +840,8 @@ svg {
     height: auto;
 }
 
-@media (min-width: 1500px) and (orientation: landscape){
+@media (min-width: 1500px) and (orientation: landscape) {
+
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
@@ -820,10 +872,10 @@ svg {
         font-size: 2rem;
     }
 
-    .primary-secondary .swiper-slide{
+    /* .primary-secondary .swiper-slide{
         min-height: 50dvh;
         height: auto;
-    }
+    } */
 
     /* .swiper-wrapper {
         max-width: 35dvh !important;
@@ -841,13 +893,14 @@ svg {
         /* --swiper-theme-color: transparent !important; */
         --tranlate-x: calc(15dvw);
         --translate-y: calc(-5dvh);
-        --translate-y1: calc(6dvh);
+        --translate-y1: calc(0dvh);
         /* Set a default value */
         --scale: 0.5;
-        --scale1: 1.5;
+        --scale1: 1.0;
+        --lottie-banner-height: 50dvh !important;
     }
 
-    .swiper{
+    .swiper {
         max-height: 40dvh !important;
     }
 
@@ -860,12 +913,12 @@ svg {
     }
 
     .lottie-banner {
-        height: 90dvh !important;
+        height: var(--lottie-banner-height) !important;
     }
 
     .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(100vh - 100px);
+        height: calc(var(--lottie-banner-height) - 100px);
     }
 
     .elementor-heading-title {
@@ -878,10 +931,10 @@ svg {
         font-size: 2rem;
     }
 
-    .primary-secondary .swiper-slide{
+    /* .primary-secondary .swiper-slide{
         min-height: 35dvh;
         height: auto;
-    }
+    } */
 }
 
 /* 
@@ -899,10 +952,7 @@ svg {
         /* Set a default value */
         --scale: 0.6;
         --scale1: 2;
-    }
-
-    .container{
-        padding: 0 !important;
+        --swiper-header-height: 2rem !important;
     }
 
     .logo-container {
@@ -928,8 +978,8 @@ svg {
     .hero-logo {
         padding-left: 1rem;
     }
-    
-    .hero-subtitle{
+
+    .hero-subtitle {
         font-size: larger !important;
         width: 70dvw !important;
         align-self: center;
@@ -946,7 +996,11 @@ svg {
     }
 
     .elementor-heading-title {
-        font-size: xx-large;
+        font-size: var(--swiper-header-height);
+    }
+
+    .swiper {
+        height: calc(100% - var(--swiper-header-height) - 12px) !important;
     }
 
     .hero-slogan {
@@ -955,10 +1009,10 @@ svg {
         font-size: 1.5rem;
     }
 
-    .primary-secondary .swiper-slide{
+    /* .primary-secondary .swiper-slide{
         min-height: 45dvh;
         height: auto;
-    }
+    } */
 }
 
 /* 
@@ -970,56 +1024,12 @@ svg {
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
-        --translate-y1: calc(10vh);
+        --translate-x: calc(10dvw);
+        --translate-y: calc(0dvh);
+        --translate-y1: calc(10dvh);
         /* Set a default value */
+        --scale: 1.0;
         --scale1: 2.0;
-    }
-
-    .lottie-banner {
-        height: 60dvh !important;
-    }
-
-    .banner-swiper {
-        /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(60vh - 100px);
-    }
-
-    .elementor-heading-title {
-        font-size: x-large;
-    }
-
-    .hero-slogan {
-        width: 50vw;
-        bottom: 15%;
-        font-size: 1rem;
-    }
-
-    .primary-secondary .swiper-slide{
-        min-height: 50dvh;
-        height: auto;
-    }
-
-}
-
-/* 
-##Device = Most of the Smartphones Mobiles (Portrait)
-##Screen = B/w 320px to 479px
-*/
-@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
-
-    /* CSS */
-    :root {
-        /* --swiper-theme-color: transparent !important; */
-        --tranlate-x: calc(20dvw);
-        --translate-y: calc(-5dvh);
-        --translate-y1: calc(3dvh);
-        /* Set a default value */
-        --scale: 0.5;
-        --scale1: 2;
-    }
-
-    .container{
-        padding: 0 !important;
     }
 
     .logo-container {
@@ -1045,21 +1055,21 @@ svg {
     .hero-logo {
         padding-left: 1rem;
     }
-    
-    .hero-subtitle{
-        font-size: small;
+
+    .hero-subtitle {
+        font-size: larger !important;
         width: 70dvw !important;
         align-self: center;
         display: inline;
     }
 
     .lottie-banner {
-        height: 55dvh !important;
+        height: 60dvh !important;
     }
 
     .banner-swiper {
         /* height: calc(100vw / 1440* 700* 0.9); */
-        height: calc(40vh - 100px);
+        height: calc(50vh - 100px);
     }
 
     .elementor-heading-title {
@@ -1068,27 +1078,148 @@ svg {
 
     .hero-slogan {
         width: 50vw;
-        bottom: 30%;
+        bottom: 15%;
         font-size: 1rem;
     }
 
-    .primary-secondary .swiper-slide{
+    /* .primary-secondary .swiper-slide{
+        min-height: 50dvh;
+        height: auto;
+    } */
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+
+    /* CSS */
+    :root {
+        /* --swiper-theme-color: transparent !important; */
+        --tranlate-x: calc(20dvw);
+        --translate-y: calc(-10dvh);
+        --translate-y1: calc(0dvh);
+        /* Set a default value */
+        --scale: 0.5;
+        --scale1: 2;
+        --lottie-banner-height: 55dvh !important;
+        --hero-slogan-width: 55dvw !important;
+    }
+
+    .logo-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        max-width: 40dvw !important;
+        align-self: baseline;
+    }
+
+    .hero-wrapper {
+        background-color: #EBEBEB;
+        width: 100%;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .hero-logo {
+        padding-left: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: small;
+        width: 70dvw !important;
+        align-self: center;
+        display: inline;
+    }
+
+    .lottie-banner {
+        height: var(--lottie-banner-height) !important;
+    }
+
+    .banner-swiper {
+        /* height: calc(100vw / 1440* 700* 0.9); */
+        height: calc(var(--lottie-banner-height) - 100px);
+    }
+
+    .hero-slogan {
+        width: var(--hero-slogan-width);
+        bottom: 10%;
+        font-size: 0.7rem;
+    }
+
+    .features-container {
+        padding: 1rem 1rem !important;
+    }
+
+    .primary-secondary-container {
+        padding: 1rem 1rem !important;
+    }
+
+    .large-title {
+        display: none;
+    }
+
+    .small-title {
+        display: block;
+    }
+
+    .small-title.elementor-heading-title {
+        padding: 1rem 0 !important;
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .elementor-heading-title {
+        /* padding: 1rem 0; */
+        font-size: 2rem;
+        text-wrap: balance;
+        font-weight: 800;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .swiper{
+        height: calc(100% - 74px);
+    }    
+
+    /* .primary-secondary .swiper-slide{
         min-height: 45dvh;
         height: auto;
+    } */
+
+    .primary-secondary {
+        padding-top: 2rem!important;
+    }
+
+    .start-learning {
+        padding: 2rem 0 !important;
+    }
+
+    .contact {
+        padding: 2rem 0 !important;
     }
 }
 
-@media (max-width: 1023px) and (orientation: landscape){
+@media (max-width: 1023px) and (orientation: landscape) {
+
     /* CSS */
     :root {
-         /* --swiper-theme-color: transparent !important; */
-         --tranlate-x: calc(20dvw);
-         --translate-y: calc(-5dvh);
-         --translate-y1: calc(10dvh);
-         /* Set a default value */
-         --scale: 0.6;
-         --scale1: 1.0;
-         --lottie-banner-height: 100dvh !important;
+        /* --swiper-theme-color: transparent !important; */
+        --tranlate-x: calc(20dvw);
+        --translate-y: calc(-15dvh);
+        --translate-y1: calc(0dvh);
+        /* Set a default value */
+        --scale: 0.5;
+        --scale1: 1.0;
+        --lottie-banner-height: 100dvh !important;
     }
 
     .logo-wrapper {
@@ -1097,23 +1228,25 @@ svg {
 
     .hero-wrapper {
         display: flex !important;
-        padding: 5px 5px !important;
+        /* padding: 5px 5px !important; */
         text-align: left !important;
+        /* align-content: end !important; */
         align-items: center;
-        width: auto !important;
+        width: 50dvw !important;
     }
 
-    .hero-logo{
-        height: 12dvh !important;
+    .hero-logo {
+        width: 15dvw !important;
+        height: auto;
     }
 
-    .hero-subtitle{
-        font-size: large !important;
+    .hero-subtitle {
+        font-size: medium !important;
         align-self: center;
         text-align: center;
         display: inline;
-        margin: 0 1rem 0 1rem;
-        width: 25dvw;
+        /* margin: 0 1rem 0 1rem; */
+        /* width: 25dvw; */
     }
 
     .lottie-banner {
@@ -1135,13 +1268,14 @@ svg {
         font-size: 1rem;
     }
 
-    .primary-secondary .swiper-slide{
+    /* .primary-secondary .swiper-slide{
         min-height: 120dvh;
         height: auto;
-    }
+    } */
 }
 
-@media (min-width: 1024px) and (orientation: landscape){
+@media (min-width: 1024px) and (orientation: landscape) {
+
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
@@ -1154,9 +1288,6 @@ svg {
         --lottie-banner-height: 80dvh !important;
     }
 
-    .container{
-        padding: 0 !important;
-    }
 
     .lottie-banner {
         height: var(--lottie-banner-height);
@@ -1179,11 +1310,11 @@ svg {
         padding: 10px;
     }
 
-    .hero-logo{
+    .hero-logo {
         height: 6dvh !important;
     }
 
-    .hero-subtitle{
+    .hero-subtitle {
         font-size: large !important;
         align-self: center;
         display: inline;
@@ -1196,31 +1327,28 @@ svg {
         font-size: 2rem;
     }
 
-    .primary-secondary .swiper-slide{
+    /* .primary-secondary .swiper-slide{
         min-height: 50dvh;
         height: auto;
-    }
+    } */
 }
 
 /* 
   ##Device = Tablets, Ipads Pro (landscape)
   ##Screen = B/w 1366px x 1024px
 */
-@media (min-width: 1366px) and (min-height: 1024px) and (orientation: landscape){
+@media (min-width: 1366px) and (min-height: 1024px) and (orientation: landscape) {
+
     /* CSS */
     :root {
         /* --swiper-theme-color: transparent !important; */
         --tranlate-x: calc(20dvw) !important;
         --translate-y: calc(-5dvh) !important;
-        --translate-y1: calc(10dvh) !important;
+        --translate-y1: calc(0dvh) !important;
         /* Set a default value */
         --scale: 0.6 !important;
-        --scale1: 1.5 !important;
-        --lottie-banner-height: 80dvh !important;
-    }
-
-    .container{
-        padding: 0 !important;
+        --scale1: 1.0 !important;
+        --lottie-banner-height: 75dvh !important;
     }
 
     .lottie-banner {
@@ -1242,14 +1370,15 @@ svg {
         text-align: left !important;
         align-items: center;
         padding: 10px;
+        width: 35dvw !important;
     }
 
-    .hero-logo{
+    .hero-logo {
         height: 6dvh !important;
     }
 
-    .hero-subtitle{
-        font-size: large !important;
+    .hero-subtitle {
+        font-size: 2rem !important;
         align-self: center;
         display: inline;
         margin: 0 1rem;
@@ -1261,15 +1390,15 @@ svg {
         font-size: 2rem;
     }
 
-    .primary-secondary .swiper-slide{
+    /* .primary-secondary .swiper-slide{
         min-height: 50dvh;
         height: auto;
-    }
+    } */
 }
 
-@media screen and (max-aspect-ratio:3/2){
-    .primary-secondary .swiper-slide{
+@media screen and (max-aspect-ratio:3/2) {
+    /* .primary-secondary .swiper-slide{
         min-height: 45dvh;
         height: auto;
-    }
+    } */
 }

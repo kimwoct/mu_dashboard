@@ -17,50 +17,43 @@
 
     <style>
         body {
-            /* background-color:red; */
             margin: 0px;
             height: 100%;
         }
 
         #lottie {
-            /* background-color:green; */
             width: 100%;
             height: 100%;
-            /* display:block; */
             overflow: hidden;
             transform: translate3d(0, 0, 0);
             text-align: center;
             opacity: 1;
         }
     </style>
-
-    <!-- <script type="text/javascript" src="js/splitting.js"></script> -->
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <div class="logo-wrapper">
-                <img class="logo-image" width="224" height="64" src="/mu.svg" alt="HKMU Logo with Slogan">
-                <img class="logo-image" width="224" height="85" src="/qef.svg" alt="HKMU 35th Anniversary Logo">
-            </div>
-            <div class="hero-wrapper" style="text-align: end;">
-                <img class="hero-logo" src="/oasis.svg" alt="Oasis Logo" >
-                <div class="hero-subtitle">All-In-One Open English Learning Platform</div>
-            </div>
+    <div class="logo-container">
+        <div class="logo-wrapper">
+            <img class="logo-image" width="224" height="64" src="/mu.svg" alt="HKMU Logo with Slogan">
+            <img class="logo-image" width="224" height="85" src="/qef.svg" alt="HKMU 35th Anniversary Logo">
+        </div>
+        <div class="hero-wrapper" style="text-align: end;">
+            <img class="hero-logo" src="/oasis.svg" alt="Oasis Logo" >
+            <div class="hero-subtitle">All-In-One Open English Learning Platform</div>
         </div>
     </div>
 
     <!-- Swiper -->
-    <div class="swiper banner-swiper" style="max-height: 70dvh; overflow: hidden;">
+    <div class="swiper banner-swiper" style="max-height: 70dvh; overflow: hidden; margin-bottom: 24px;">
         <div class="slide-trigger-area slide-trigger-left" id="slidePrev"></div>
         <div class="slide-trigger-area slide-trigger-right" id="slideNext"></div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="slide-content">
                     <!-- Oasis -->
-                    <div id="sand_background"
-                        style="width: 100dvw; height: auto; background: url('/images/sand.png') center center no-repeat; background-size: cover;position: relative; top: 0;">
+                    <div id="_background"
+                        style="width: 100dvw; height: 100%; background: url('/images/sand.png') center center no-repeat; background-size: cover;position: relative; top: 0;">
                         <div class="hero-slogan" style="background: rgba(220, 229, 118, 0.3);">
                             <h3>
                                 Take learning to the next level with AI
@@ -92,8 +85,8 @@
             <div class="swiper-slide">
                 <div class="slide-content">
                     <!-- Ocean -->
-                    <div id="ocean_background"
-                        style="width: 100dvw; height: auto; background: url('/images/sea.png') center center no-repeat; background-size: cover;position: relative; top: 0;">
+                    <div id="_background"
+                        style="width: 100dvw; height: 100%; background: url('/images/sea.png') center center no-repeat; background-size: cover;position: relative; top: 0;">
                         <div class="hero-slogan" style="background: rgba(131, 131, 131, 0.222);">
                             <h3>
                                 An immersive multimedia learning platform supports primary and secondary English learning
@@ -132,8 +125,8 @@
 
     <!-- Features Section -->
     <section class="features">
-        <div class="container">
-            <div class="elementor-heading-title elementor-size-default wow words chars"
+        <div class="features-container">
+            <div class="large-title elementor-heading-title wow words chars"
                 style="--word-total: 2; --char-total: 24; color: #1A71AB; padding: 1rem;">
                 <span class="word" data-word="Experience" style="--word-index: 0;">
                     <span class="char" data-char="E" style="--char-index: 0;">E</span>
@@ -168,42 +161,76 @@
                     <span class="char" data-char="s" style="--char-index: 25;">s</span>
                 </span>
             </div>
-            <div class="features-description" style="text-align: center; font-weight: 600; font-size: larger;">
+            <div class="small-title elementor-heading-title wow words chars"
+                style="--word-total: 2; --char-total: 24; color: #1A71AB; padding: 1rem;">
+                <span class="word" data-word="Experience" style="--word-index: 0;">
+                    <span class="char" data-char="E" style="--char-index: 0;">E</span>
+                    <span class="char" data-char="x" style="--char-index: 1;">x</span>
+                    <span class="char" data-char="p" style="--char-index: 2;">p</span>
+                    <span class="char" data-char="e" style="--char-index: 3;">e</span>
+                    <span class="char" data-char="r" style="--char-index: 4;">r</span>
+                    <span class="char" data-char="i" style="--char-index: 5;">i</span>
+                    <span class="char" data-char="e" style="--char-index: 6;">e</span>
+                    <span class="char" data-char="n" style="--char-index: 7;">n</span>
+                    <span class="char" data-char="c" style="--char-index: 8;">c</span>
+                    <span class="char" data-char="e" style="--char-index: 9;">e</span>
+                    <span class="char" data-char="e" style="--char-index: 9;">&nbsp;</span>
+                    <span class="char" data-char="T" style="--char-index: 9;">T</span>
+                    <span class="char" data-char="h" style="--char-index: 10;">h</span>
+                    <span class="char" data-char="e" style="--char-index: 11;">e</span>
+                    <span class="char" data-char="e" style="--char-index: 11;">&nbsp;</span>
+                    <span class="char" data-char="U" style="--char-index: 12;">U</span>
+                    <span class="char" data-char="n" style="--char-index: 13;">n</span>
+                    <span class="char" data-char="i" style="--char-index: 14;">i</span>
+                    <span class="char" data-char="q" style="--char-index: 15;">q</span>
+                    <span class="char" data-char="u" style="--char-index: 16;">u</span>
+                    <span class="char" data-char="e" style="--char-index: 17;">e</span>
+                </span>
+                <span class="word" data-word="Experience" style="--word-index: 0;">
+                    <span class="char" data-char="F" style="--char-index: 18;">F</span>
+                    <span class="char" data-char="e" style="--char-index: 19;">e</span>
+                    <span class="char" data-char="a" style="--char-index: 20;">a</span>
+                    <span class="char" data-char="t" style="--char-index: 21;">t</span>
+                    <span class="char" data-char="u" style="--char-index: 22;">u</span>
+                    <span class="char" data-char="r" style="--char-index: 23;">r</span>
+                    <span class="char" data-char="e" style="--char-index: 24;">e</span>
+                    <span class="char" data-char="s" style="--char-index: 25;">s</span>
+                </span>
+            </div>
+            <div class="features-description">
                 <a class="try-now-button" style="text-decoration: none; text-align: center; font-weight: 600;" href="https://www.opentextbooks.org.hk/" target="_blank" rel="noopener noreferrer">Open English Textbook</a>
             </div>
             <div class="features-grid">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
-                        <div class="elementor-widget-container">
-                            <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
-                                <div class="nt-flip-container">
-                                    <div class="nt-flip-front">
-                                        <div class="nt-flip-inner">
-                                            <img src="/images/Unified-Learning-Platform.png"
-                                                style="max-width: 97%; height: auto; background-color: white; margin: 5px;">
-                                            <div class="nt-flip-desc" style="min-height: 60px;">
-                                                Unified Learning
-                                                Platform</div>
-                                        </div>
+                <div class="elementor-element"
+                    data-element_type="widget">
+                    <div class="elementor-widget-container">
+                        <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
+                            <div class="nt-flip-container">
+                                <div class="nt-flip-front">
+                                    <div class="nt-flip-inner">
+                                        <img src="/images/Unified-Learning-Platform.png"
+                                            style="max-width: 97%; height: auto; background-color: white; margin: 5px;">
+                                        <div class="nt-flip-desc" style="min-height: 60px; align-content: center;">
+                                            Unified Learning
+                                            Platform</div>
                                     </div>
-                                    <div class="nt-flip-back" style="background: #0470B8;">
-                                        <div class="nt-flip-inner">
-                                            <div class="nt-flip-desc" style="padding: 2rem;">One-stop
-                                                access to core textbook content and supplementary resources
-                                            </div>
-                                            <!-- <a class="nt-flip-button" href="javascript:void(0);" onclick="return false;" target="_blank"
-                                                data-wpel-link="internal" title="as" tabindex="0">Read More</a> -->
+                                </div>
+                                <div class="nt-flip-back" style="background: #0470B8;">
+                                    <div class="nt-flip-inner">
+                                        <div class="nt-flip-desc" style="padding: 2rem;">One-stop
+                                            access to core textbook content and supplementary resources
                                         </div>
+                                        <!-- <a class="nt-flip-button" href="javascript:void(0);" onclick="return false;" target="_blank"
+                                            data-wpel-link="internal" title="as" tabindex="0">Read More</a> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
+                <div>
+                    <div class="elementor-element"
+                        data-element_type="widget">
                         <div class="elementor-widget-container">
                             <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
                                 <div class="nt-flip-container">
@@ -229,9 +256,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
+                <div>
+                    <div class="elementor-element"
+                        data-element_type="widget">
                         <div class="elementor-widget-container">
                             <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
                                 <div class="nt-flip-container">
@@ -256,9 +283,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
+                <div>
+                    <div class="elementor-element"
+                        data-element_type="widget">
                         <div class="elementor-widget-container">
                             <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
                                 <div class="nt-flip-container">
@@ -284,9 +311,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
+                <div>
+                    <div class="elementor-element"
+                        data-element_type="widget">
                         <div class="elementor-widget-container">
                             <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
                                 <div class="nt-flip-container">
@@ -313,9 +340,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
+                <div>
+                    <div class="elementor-element"
+                        data-element_type="widget">
                         <div class="elementor-widget-container">
                             <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
                                 <div class="nt-flip-container">
@@ -330,7 +357,7 @@
                                     </div>
                                     <div class="nt-flip-back" style="background: #0470B8;">
                                         <div class="nt-flip-inner">
-                                            <div class="nt-flip-desc" style="padding: 0 2rem ; text-align: left;">
+                                            <div class="nt-flip-desc" style="padding: 0 16px ; text-align: left;">
                                                 &bull; Teachers freely upload and modify AI-generated materials
                                             </div>
                                             <div class="nt-flip-desc" style="padding: 1rem 2rem; text-align: left;">
@@ -350,240 +377,267 @@
 
     <!-- Primary and Secondary Showcases Section -->
     <section class="primary-secondary">
-        <div class="container">
+        <div class="primary-secondary-container">
 
             <div class="primary-secondary-grid">
 
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-heading-title elementor-size-default wow words chars"
-                                style="--word-total: 3; --char-total: 13; color: #1A71AB;">
-                                <div class="word" data-word="Primary style=" --word-index: 0;">
-                                    <div class="char" data-char="P" style="--char-index: 1;">P</div>
-                                    <div class="char" data-char="r" style="--char-index: 2;">r</div>
-                                    <div class="char" data-char="i" style="--char-index: 3;">i</div>
-                                    <div class="char" data-char="m" style="--char-index: 4;">m</div>
-                                    <div class="char" data-char="a" style="--char-index: 5;">a</div>
-                                    <div class="char" data-char="r" style="--char-index: 6;">r</div>
-                                    <div class="char" data-char="y" style="--char-index: 7;">y</div>
-                                    <span class="char" data-char="e" style="--char-index: 7;">&nbsp;</span>
-                                    <div class="char" data-char="L" style="--char-index: 8;">L</div>
-                                    <div class="char" data-char="e" style="--char-index: 9;">e</div>
-                                    <div class="char" data-char="v" style="--char-index: 10;">v</div>
-                                    <div class="char" data-char="e" style="--char-index: 11;">e</div>
-                                    <div class="char" data-char="l" style="--char-index: 12;">l</div>
+                <div class="elementor-elementelementor-widget-wavo-flip-card" style="height: 100%;"
+                    data-element_type="widget">
+                    <div class="elementor-widget-container" style="height: 100%;">
+                        <div class="elementor-heading-title wow words chars"
+                            style="--word-total: 3; --char-total: 13; color: #1A71AB; text-align: left;">
+                            <div class="word" data-word="Primary style=" --word-index: 0;">
+                                <div class="char" data-char="P" style="--char-index: 1;">P</div>
+                                <div class="char" data-char="r" style="--char-index: 2;">r</div>
+                                <div class="char" data-char="i" style="--char-index: 3;">i</div>
+                                <div class="char" data-char="m" style="--char-index: 4;">m</div>
+                                <div class="char" data-char="a" style="--char-index: 5;">a</div>
+                                <div class="char" data-char="r" style="--char-index: 6;">r</div>
+                                <div class="char" data-char="y" style="--char-index: 7;">y</div>
+                                <span class="char" data-char="e" style="--char-index: 7;">&nbsp;</span>
+                                <div class="char" data-char="L" style="--char-index: 8;">L</div>
+                                <div class="char" data-char="e" style="--char-index: 9;">e</div>
+                                <div class="char" data-char="v" style="--char-index: 10;">v</div>
+                                <div class="char" data-char="e" style="--char-index: 11;">e</div>
+                                <div class="char" data-char="l" style="--char-index: 12;">l</div>
+                            </div>
+                        </div>
+                        <!-- <p style="color: #1A71AB; text-align: center;">show cases</p> -->
+
+                        <div class="swiper primary-swiper"
+                            style="overflow: hidden; margin-bottom: 0px;">
+                            <div class="slide-trigger-area slide-trigger-left" id="primary-slidePrev"></div>
+                            <div class="slide-trigger-area slide-trigger-right" id="primary-slideNext"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/primary-1.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Pre-reading</h1>
+                                            <p style="color: #105042;">Interactive activities stimulate students
+                                                prior knowledge and build vocabulary</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/primary-2.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Reading</h1>
+                                            <p style="color: #105042;">Animated content enriches reading, with instant answers for comprehension tasks</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/primary-3.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Language Structures</h1>
+                                            <p style="color: #105042;">Engaging exercises present the target grammar
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/primary-4.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Writing</h1>
+                                            <p style="color: #105042;">A process writing approach, pre- writing
+                                                activities, writing tasks, and Al-generated feedback develop and
+                                                enhance writing skills</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/primary-5.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Grammar</h1>
+                                            <p style="color: #105042;">Various exercises engage students to practice
+                                                the target grammar in context</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/primary-6.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Phonics</h1>
+                                            <p style="color: #105042;">Audio-visual resources introduce the vowels and consonant</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- <p style="color: #1A71AB; text-align: center;">show cases</p> -->
-
-                            <div class="swiper primary-swiper"
-                                style="overflow: hidden; margin-bottom: 0px;">
-                                <div class="slide-trigger-area slide-trigger-left" id="primary-slidePrev"></div>
-                                <div class="slide-trigger-area slide-trigger-right" id="primary-slideNext"></div>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/primary-1.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Pre-reading</h1>
-                                                <p style="color: #105042; font-size: larger;">Interactive activities stimulate students
-                                                    prior knowledge and build vocabulary</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/primary-2.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Reading</h1>
-                                                <p style="color: #105042; font-size: larger;">Animated content enriches reading, with instant answers for comprehension tasks</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/primary-3.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Language Structures</h1>
-                                                <p style="color: #105042; font-size: larger;">Engaging exercises present the target grammar
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/primary-4.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Writing</h1>
-                                                <p style="color: #105042; font-size: larger;">A process writing approach, pre- writing
-                                                    activities, writing tasks, and Al-generated feedback develop and
-                                                    enhance writing skills</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/primary-5.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Grammar</h1>
-                                                <p style="color: #105042; font-size: larger;">Various exercises engage students to practice
-                                                    the target grammar in context</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/primary-6.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Phonics</h1>
-                                                <p style="color: #105042; font-size: larger;">Audio-visual resources introduce the vowels and consonant</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- Add Pagination -->
-                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);">
-                                </div>
-                                <!-- Add Navigation -->
-                                <div class="swiper-button-prev" style="color: transparent;"></div>
-                                <div class="swiper-button-next" style="color: transparent;"></div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination" >
                             </div>
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-prev" style="color: transparent;"></div>
+                            <div class="swiper-button-next" style="color: transparent;"></div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-heading-title elementor-size-default wow words chars"
-                                style="--word-total: 3; --char-total: 13; color: #1A71AB;">
-                                <div class="word" data-word="Primary style=" --word-index: 0;">
-                                    <div class="char" data-char="S" style="--char-index: 1;">S</div>
-                                    <div class="char" data-char="e" style="--char-index: 2;">e</div>
-                                    <div class="char" data-char="c" style="--char-index: 3;">c</div>
-                                    <div class="char" data-char="o" style="--char-index: 4;">o</div>
-                                    <div class="char" data-char="n" style="--char-index: 5;">n</div>
-                                    <div class="char" data-char="d" style="--char-index: 6;">d</div>
-                                    <div class="char" data-char="a" style="--char-index: 7;">a</div>
-                                    <div class="char" data-char="r" style="--char-index: 7;">r</div>
-                                    <div class="char" data-char="y" style="--char-index: 7;">y</div>
-                                    <span class="char" data-char="e" style="--char-index: 7;">&nbsp;</span>
-                                    <div class="char" data-char="L" style="--char-index: 8;">L</div>
-                                    <div class="char" data-char="e" style="--char-index: 9;">e</div>
-                                    <div class="char" data-char="v" style="--char-index: 10;">v</div>
-                                    <div class="char" data-char="e" style="--char-index: 11;">e</div>
-                                    <div class="char" data-char="l" style="--char-index: 12;">l</div>
-                                </div>
+                
+                <div class="elementor-elementelementor-widget-wavo-flip-card" style="height: 100%;"
+                    data-element_type="widget">
+                    <div class="elementor-widget-container" style="height: 100%;">
+                        <div class="elementor-heading-title wow words chars"
+                            style="--word-total: 3; --char-total: 13; color: #1A71AB; text-align: left;">
+                            <div class="word" data-word="Primary style=" --word-index: 0;">
+                                <div class="char" data-char="S" style="--char-index: 1;">S</div>
+                                <div class="char" data-char="e" style="--char-index: 2;">e</div>
+                                <div class="char" data-char="c" style="--char-index: 3;">c</div>
+                                <div class="char" data-char="o" style="--char-index: 4;">o</div>
+                                <div class="char" data-char="n" style="--char-index: 5;">n</div>
+                                <div class="char" data-char="d" style="--char-index: 6;">d</div>
+                                <div class="char" data-char="a" style="--char-index: 7;">a</div>
+                                <div class="char" data-char="r" style="--char-index: 7;">r</div>
+                                <div class="char" data-char="y" style="--char-index: 7;">y</div>
+                                <span class="char" data-char="e" style="--char-index: 7;">&nbsp;</span>
+                                <div class="char" data-char="L" style="--char-index: 8;">L</div>
+                                <div class="char" data-char="e" style="--char-index: 9;">e</div>
+                                <div class="char" data-char="v" style="--char-index: 10;">v</div>
+                                <div class="char" data-char="e" style="--char-index: 11;">e</div>
+                                <div class="char" data-char="l" style="--char-index: 12;">l</div>
                             </div>
-                            <!-- <p style="color: #1A71AB; text-align: center;">show cases</p> -->
+                        </div>
+                        <!-- <p style="color: #1A71AB; text-align: center;">show cases</p> -->
 
 
-                            <div class="swiper secondary-swiper"
-                                style="overflow: hidden; margin-bottom: 0px;">
-                                <div class="slide-trigger-area slide-trigger-left" id="secondary-slidePrev"></div>
-                                <div class="slide-trigger-area slide-trigger-right" id="secondary-slideNext"></div>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/secondary-1.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Theme-basing Learning</h1>
-                                                <p style="color: #105042; font-size: larger;">Categorized textbook topics facilitate
-                                                    cohesive instruction</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/secondary-2.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Pre-reading</h1>
-                                                <p style="color: #105042; font-size: larger;">Interactive activities such as Al Chatbot
-                                                    stimulate students' prior
-                                                    knowledge and build vocabulary</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/secondary-3.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Reading & Listening</h1>
-                                                <p style="color: #105042; font-size: larger;">Incorporated multimedia elements introduce
-                                                    various text types,
-                                                    targeted vocabulary, grammar and comprehension practice</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/secondary-4.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Writing</h1>
-                                                <p style="color: #105042; font-size: larger;">A process writing approach, pre- writing
-                                                    activities, writing tasks,
-                                                    and Al-generated feedback develop and enhance writing skills</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/secondary-5.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem; background-color: #F5FFE6;">
-                                                <h1 style="color: #464646;">Grammar</h1>
-                                                <p style="color: #105042; font-size: larger;">The use of explanatory notes and
-                                                    contextualized exercises introduce
-                                                    relevant grammar structures</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide" style="background-color: #F5FFE6; ">
-                                        <div class="swiper-slide-container">
-                                            <img src="/images/secondary-6.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div style="text-align: left; padding: 0 2rem;">
-                                                <h1 style="color: #464646;">Phonics</h1>
-                                                <p style="color: #105042; font-size: larger;">Audio-visual resources introduce the vowels and consonant</p>
-                                            </div>
+                        <div class="swiper secondary-swiper"
+                            style="overflow: hidden; margin-bottom: 0px;">
+                            <div class="slide-trigger-area slide-trigger-left" id="secondary-slidePrev"></div>
+                            <div class="slide-trigger-area slide-trigger-right" id="secondary-slideNext"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/secondary-1.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Theme-basing Learning</h1>
+                                            <p style="color: #105042;">Categorized textbook topics facilitate
+                                                cohesive instruction</p>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Add Pagination -->
-                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);">
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/secondary-2.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Pre-reading</h1>
+                                            <p style="color: #105042;">Interactive activities such as Al Chatbot
+                                                stimulate students' prior
+                                                knowledge and build vocabulary</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- Add Navigation -->
-                                <div class="swiper-button-prev" style="color: transparent;"></div>
-                                <div class="swiper-button-next" style="color: transparent;"></div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/secondary-3.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Reading & Listening</h1>
+                                            <p style="color: #105042;">Incorporated multimedia elements introduce
+                                                various text types,
+                                                targeted vocabulary, grammar and comprehension practice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/secondary-4.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Writing</h1>
+                                            <p style="color: #105042;">A process writing approach, pre- writing
+                                                activities, writing tasks,
+                                                and Al-generated feedback develop and enhance writing skills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/secondary-5.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                            <h1 style="color: #464646;">Grammar</h1>
+                                            <p style="color: #105042;">The use of explanatory notes and
+                                                contextualized exercises introduce
+                                                relevant grammar structures</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" style="background-color: #F5FFE6; ">
+                                    <div class="swiper-slide-container">
+                                        <img src="/images/secondary-6.png"
+                                            style="width: 100%; height: auto;">
+                                        <div style="text-align: left; padding: 0 16px;">
+                                            <h1 style="color: #464646;">Phonics</h1>
+                                            <p style="color: #105042;">Audio-visual resources introduce the vowels and consonant</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination" >
+                            </div>
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-prev" style="color: transparent;"></div>
+                            <div class="swiper-button-next" style="color: transparent;"></div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
 
     <!-- Start Learning Section -->
     <section class="start-learning">
-        <div class="container">
-            <div class="elementor-heading-title elementor-size-default wow words chars"
+        <div class="start-learning-container">
+            <div class="large-title elementor-heading-title wow words chars"
+                style="--word-total: 3; --char-total: 13; color: #1A71AB;">
+                <div class="word" data-word="Start" style="--word-index: 0;">
+                    <div class="char" data-char="S" style="--char-index: 1;">S</div>
+                    <div class="char" data-char="t" style="--char-index: 2;">t</div>
+                    <div class="char" data-char="a" style="--char-index: 3;">a</div>
+                    <div class="char" data-char="r" style="--char-index: 4;">r</div>
+                    <div class="char" data-char="t" style="--char-index: 5;">t</div>
+                    <span class="char" data-char="e" style="--char-index: 5;">&nbsp;</span>
+                    <div class="char" data-char="Y" style="--char-index: 6;">Y</div>
+                    <div class="char" data-char="o" style="--char-index: 7;">o</div>
+                    <div class="char" data-char="u" style="--char-index: 8;">u</div>
+                    <div class="char" data-char="r" style="--char-index: 9;">r</div>
+                    <span class="char" data-char="e" style="--char-index: 9;">&nbsp;</span>
+                    <div class="char" data-char="L" style="--char-index: 10;">L</div>
+                    <div class="char" data-char="e" style="--char-index: 11;">e</div>
+                    <div class="char" data-char="a" style="--char-index: 12;">a</div>
+                    <div class="char" data-char="r" style="--char-index: 13;">r</div>
+                    <div class="char" data-char="n" style="--char-index: 14;">n</div>
+                    <div class="char" data-char="i" style="--char-index: 15;">i</div>
+                    <div class="char" data-char="n" style="--char-index: 16;">n</div>
+                    <div class="char" data-char="g" style="--char-index: 17;">g</div>
+                    <span class="char" data-char="e" style="--char-index: 17;">&nbsp;</span>
+                    <span class="char" data-char="T" style="--char-index: 18;">T</span>
+                    <span class="char" data-char="r" style="--char-index: 19;">r</span>
+                    <span class="char" data-char="i" style="--char-index: 20;">i</span>
+                    <span class="char" data-char="a" style="--char-index: 21;">a</span>
+                    <span class="char" data-char="l" style="--char-index: 22;">l</span>
+                </div>
+            </div>
+            <div class="small-title elementor-heading-title wow words chars"
                 style="--word-total: 3; --char-total: 13; color: #1A71AB;">
                 <div class="word" data-word="Start" style="--word-index: 0;">
                     <div class="char" data-char="S" style="--char-index: 1;">S</div>
@@ -614,71 +668,70 @@
                 </div>
             </div>
             <div class="learning-grid">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
-                        <div class="elementor-widget-container">
-                            <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
-                                <div class="nt-flip-container">
-                                    <div class="nt-flip-front">
-                                        <div class="nt-flip-inner" style="background: #7FBB2A;">
-                                            <img src="/primary.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div class="nt-flip-desc" style="min-height: 60px; font-size: larger;">
-                                                Primary Level</div>
-                                        </div>
-                                    </div>
-                                    <div class="nt-flip-back"
-                                        style="flex: 1; display: flex; flex-direction: column; background: #0470B8; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                                        <div class="nt-flip-inner"
-                                            style="flex: 1; display: flex; flex-direction: column; height: 100%; padding: 0 3rem; justify-content: flex-end;">
-                                            <div
-                                                style="min-height: 60px; font-size: xx-large; font-weight: bold; padding-top: 1rem; padding-bottom: 15rem;">
-                                                Primary Level</div>
-                                                <button class="try-now-button" style="margin-top: 0; margin-bottom: 1rem;">TRY NOW</button>
-                                        </div>
+                
+                <div class="elementor-element"
+                    data-element_type="widget">
+                    <div class="elementor-widget-container" style="height: 100%;">
+                        <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
+                            <div class="nt-flip-container">
+                                <div class="nt-flip-front">
+                                    <div class="nt-flip-inner" style="background: #7FBB2A;">
+                                        <img src="/primary.png"
+                                            style="width: 100%; height: auto;">
+                                        <div class="nt-flip-desc" style="color:#F5FFE6;min-height: 60px; font-size: larger;">
+                                            Primary Level</div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-bbefbae elementor-widget elementor-widget-wavo-flip-card"
-                        data-id="bbefbae" data-element_type="widget" data-widget_type="wavo-flip-card.default">
-                        <div class="elementor-widget-container">
-                            <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
-                                <div class="nt-flip-container">
-                                    <div class="nt-flip-front">
-                                        <div class="nt-flip-inner" style="background-color: #7FBB2A;">
-                                            <img src="/secondary.png"
-                                                style="width: 100%; height: auto; margin-bottom: 15px;">
-                                            <div class="nt-flip-desc" style="min-height: 60px; font-size: larger;">
-                                                Secondary Level</div>
-                                        </div>
-                                    </div>
-                                    <div class="nt-flip-back"
-                                        style="flex: 1; display: flex; flex-direction: column; background: #0470B8; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                                        <div class="nt-flip-inner"
-                                            style="flex: 1; display: flex; flex-direction: column; height: 100%; padding: 0 3rem; justify-content: flex-end;">
-                                            <div
-                                                style="min-height: 60px; font-size: xx-large; font-weight: bold; padding-top: 1rem; padding-bottom: 15rem;">
-                                                Secondary Level</div>
+                                <div class="nt-flip-back"
+                                    style="flex: 1; display: flex; flex-direction: column; background: #0470B8; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                                    <div class="nt-flip-inner"
+                                        style="flex: 1; display: flex; flex-direction: column; height: 100%; padding: 0 24px; justify-content: flex-end;">
+                                        <div
+                                            style="min-height: 60px; font-size: xx-large; font-weight: bold; padding-top: 1rem; padding-bottom: 15rem;">
+                                            Primary Level</div>
                                             <button class="try-now-button" style="margin-top: 0; margin-bottom: 1rem;">TRY NOW</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="elementor-element"
+                    data-element_type="widget">
+                    <div class="elementor-widget-container">
+                        <div class="nt-flip-col flip-left" ontouchstart="this.classList.toggle('hover');">
+                            <div class="nt-flip-container">
+                                <div class="nt-flip-front">
+                                    <div class="nt-flip-inner" style="background-color: #7FBB2A;">
+                                        <img src="/secondary.png"
+                                            style="width: 100%; height: auto;">
+                                        <div class="nt-flip-desc" style="color:#F5FFE6;min-height: 60px; font-size: larger;">
+                                            Secondary Level</div>
+                                    </div>
+                                </div>
+                                <div class="nt-flip-back"
+                                    style="flex: 1; display: flex; flex-direction: column; background: #0470B8; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                                    <div class="nt-flip-inner"
+                                        style="flex: 1; display: flex; flex-direction: column; height: 100%; padding: 0 24px; justify-content: flex-end;">
+                                        <div
+                                            style="min-height: 60px; font-size: xx-large; font-weight: bold; padding-top: 1rem; padding-bottom: 15rem;">
+                                            Secondary Level</div>
+                                        <button class="try-now-button" style="margin-top: 0; margin-bottom: 1rem;">TRY NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
-        <div class="container">
+        <div class="contact-container">
             <div class="contact-card">
                 <div class="contact-grid">
                     <!-- Left side - Contact Form -->
