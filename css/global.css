@@ -1,0 +1,101 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+
+    --lottie-banner-height: 40dvh;
+    --lottie-banner-max-height: 40dvh;
+    --lottie-tranlate-x: calc(10dvw);
+    --lottie-translate-y: calc(0dvh);
+    --lottie-translate-y1: calc(10dvh);
+    --lottie-scale: 1.0;
+    --lottie-scale1: 1.0;
+    --swiper-header-height: 2rem;
+    
+    --header-container-width: 100dvw;
+    --header-container-height: 100dvh;
+    --logo-wrapper-width: 40dvw;
+    --logo-wrapper-height: auto;
+    --header-wrapper-width: 40dvw;
+    --header-wrapper-height: auto;
+    --header-logo-width: 100px;
+    --header-logo-height: 100px;
+    --header-subtitle-width: 40dvw;
+
+    --hero-slogan-width: 40dvw;
+    --section-margin-top: 3rem;
+    --section-margin-bottom: 3rem;
+    --grid-minmax-width: 300px;
+    --swiper-card-height: 44px;
+    --swiper-card-padding: 32px;
+    --bg-border-radius: 1.5rem;
+    --generic-font-size: 1.5rem;
+    --x32-padding: 32px;
+    --x24-padding: 24px;
+    --x16-padding: 16px;
+    --x8-padding: 8px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    background-image: url("/background.svg");
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 25%);
+    background-size: 100%;
+}
+
+/* body * {
+    border: #0470B8 solid 1px;
+} */
+
+body>section {
+    padding-left: var(--x16-padding) !important;
+    padding-right: var(--x16-padding) !important;
+}
+
+section>div {
+    padding-left: var(--x16-padding) !important;
+    padding-right: var(--x16-padding) !important;
+}
+
+h1 {
+    display: block;
+    font-size: 1.7rem;
+    margin-top: 8px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+p {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    margin-bottom: 0em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+svg {
+    width: 100%;
+    /* Fill container width */
+    height: 100%;
+    /* Fill container height */
+}
+
+.word {
+    display: inline-block;
+    /* Allows wrapping */
+    overflow-wrap: break-word;
+    /* Breaks long words if necessary */
+    word-wrap: break-word;
+    /* Older support for word wrapping */
+    white-space: normal;
+    /* Allows text to wrap normally */
+}
+
+.container {
+    position: relative;
+}

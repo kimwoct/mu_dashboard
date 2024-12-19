@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oasis - English Learning Platform</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="frontend.min.css"> -->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero_banner.css">
+    <link rel="stylesheet" href="css/feature.css">
+    <link rel="stylesheet" href="css/showcases.css">
+    <link rel="stylesheet" href="css/start_learning.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/custom.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="/swiper-bundle.min.css" />
     <script type="text/javascript" src="custom-scripts.js"></script>
@@ -33,19 +40,20 @@
 </head>
 
 <body>
-    <div class="logo-container">
+    <!-- Header & Logo -->
+    <div class="header-container">
         <div class="logo-wrapper">
             <img class="logo-image" width="224" height="64" src="/mu.svg" alt="HKMU Logo with Slogan">
             <img class="logo-image" width="224" height="85" src="/qef.svg" alt="HKMU 35th Anniversary Logo">
         </div>
-        <div class="hero-wrapper" style="text-align: end;">
-            <img class="hero-logo" src="/oasis.svg" alt="Oasis Logo" >
-            <div class="hero-subtitle">All-In-One Open English Learning Platform</div>
+        <div class="header-wrapper" style="text-align: end;">
+            <img class="header-logo" src="/oasis.svg" alt="Oasis Logo" >
+            <div class="header-subtitle">All-In-One Open English Learning Platform</div>
         </div>
     </div>
 
-    <!-- Swiper -->
-    <div class="swiper banner-swiper" style="max-height: 70dvh; overflow: hidden; margin-bottom: 24px;">
+    <!-- Hero Banner & Swiper -->
+    <div class="swiper banner-swiper" style="overflow: hidden;">
         <div class="slide-trigger-area slide-trigger-left" id="slidePrev"></div>
         <div class="slide-trigger-area slide-trigger-right" id="slideNext"></div>
         <div class="swiper-wrapper">
@@ -413,7 +421,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/primary-1.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Pre-reading</h1>
                                             <p style="color: #105042;">Interactive activities stimulate students
                                                 prior knowledge and build vocabulary</p>
@@ -424,7 +432,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/primary-2.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Reading</h1>
                                             <p style="color: #105042;">Animated content enriches reading, with instant answers for comprehension tasks</p>
                                         </div>
@@ -435,7 +443,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/primary-3.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Language Structures</h1>
                                             <p style="color: #105042;">Engaging exercises present the target grammar
                                             </p>
@@ -447,7 +455,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/primary-4.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Writing</h1>
                                             <p style="color: #105042;">A process writing approach, pre- writing
                                                 activities, writing tasks, and Al-generated feedback develop and
@@ -460,7 +468,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/primary-5.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Grammar</h1>
                                             <p style="color: #105042;">Various exercises engage students to practice
                                                 the target grammar in context</p>
@@ -472,7 +480,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/primary-6.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Phonics</h1>
                                             <p style="color: #105042;">Audio-visual resources introduce the vowels and consonant</p>
                                         </div>
@@ -524,7 +532,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/secondary-1.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Theme-basing Learning</h1>
                                             <p style="color: #105042;">Categorized textbook topics facilitate
                                                 cohesive instruction</p>
@@ -535,7 +543,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/secondary-2.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Pre-reading</h1>
                                             <p style="color: #105042;">Interactive activities such as Al Chatbot
                                                 stimulate students' prior
@@ -547,7 +555,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/secondary-3.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Reading & Listening</h1>
                                             <p style="color: #105042;">Incorporated multimedia elements introduce
                                                 various text types,
@@ -559,7 +567,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/secondary-4.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Writing</h1>
                                             <p style="color: #105042;">A process writing approach, pre- writing
                                                 activities, writing tasks,
@@ -571,7 +579,7 @@
                                     <div class="swiper-slide-container">
                                         <img src="/images/secondary-5.png"
                                             style="width: 100%; height: auto;">
-                                        <div style="text-align: left; padding: 0 16px; background-color: #F5FFE6;">
+                                        <div class="content" style="text-align: left; background-color: #F5FFE6;">
                                             <h1 style="color: #464646;">Grammar</h1>
                                             <p style="color: #105042;">The use of explanatory notes and
                                                 contextualized exercises introduce

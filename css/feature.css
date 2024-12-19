@@ -1,0 +1,68 @@
+/* Features Section */
+.large-title {
+    display: block;
+}
+
+.small-title {
+    display: none;
+}
+
+.features>div {
+    max-width: 1152px;
+    margin: 0 auto;
+    background: linear-gradient(180.61deg, rgba(127, 187, 42, 0.17) -10.36%, rgba(255, 255, 255, 0.17) 46.87%);
+    border-radius: var(--bg-border-radius) var(--bg-border-radius) 0 0;
+    padding: var(--x24-padding) 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: rgb(30, 64, 175);
+    margin-bottom: var(--x24-padding);
+}
+
+.features-description {
+    text-align: center;
+    color: rgb(75, 85, 99);
+    padding: var(--x32-padding) 0;
+}
+
+.features-description p {
+    margin-bottom: var(--x24-padding);
+    line-height: 1.6;
+}
+
+.features-description p:last-child {
+    margin-bottom: 0;
+}
+
+.features-grid {
+    display: grid;
+    gap: var(--x24-padding);
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-minmax-width), 1fr));
+}
+
+.feature-card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: var(--x24-padding);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    height: 10rem;
+    border-radius: var(--x8-padding);
+    margin-bottom: var(--x16-padding);
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.nt-flip-desc {
+    align-content: center;
+}
