@@ -526,7 +526,7 @@ swiper-pagination {
         /* Logo */
         --header-wrapper-width: 50dvw !important;
         --header-wrapper-height: auto !important;
-        --header-logo-width: 12dvw !important;
+        --header-logo-width: 12vw !important;
         --header-logo-height: 6dvh !important;
         --header-subtitle-width: 50dvw !important;
         --header-subtitle-bottom: 15% !important;
@@ -537,24 +537,51 @@ swiper-pagination {
         --lottie-translate-y1: calc(20dvh) !important;
         --lottie-scale: 0.6 !important;
         --lottie-scale1: 1.0 !important;
-        --lottie-banner-height: 75dvh !important;
-        --lottie-banner-max-height: 75dvh !important;
+        --lottie-banner-height: 50dvh !important;
+        --lottie-banner-max-height: 50dvh !important;
         --hero-slogan-width: 50dvw !important;
         --hero-slogan-bottom: 15% !important;
         --hero-slogan-font-size: 2rem !important;
     }
 
+    /* .header-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        align-self: baseline;
+    }
+
+    .header-wrapper {
+        background-color: #EBEBEB;
+        width: 100dvw !important;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .header-logo {
+        padding-left: 1rem;
+        height: 6vh !important;
+    }
+
+    .header-subtitle {
+        align-self: center;
+        display: inline;
+    } */
+
     .elementor-heading-title {
         font-size: xx-large;
     }
 
-    .header-wrapper {
+    /* .header-wrapper {
         display: flex !important;
-        /* padding: 5px 0 !important; */
         text-align: left !important;
         align-items: center;
-        /* padding: 10px; */
-    }
+    } */
 
     /* .header-logo {
         height: 6dvh !important;

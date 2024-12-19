@@ -18,7 +18,7 @@
     --header-wrapper-width: 40dvw;
     --header-wrapper-height: auto;
     --header-logo-width: 100px;
-    --header-logo-height: 100px;
+    --header-logo-height: auto;
     --header-subtitle-width: 40dvw;
     --header-subtitle-font-size: 1rem;
 
