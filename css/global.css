@@ -20,6 +20,7 @@
     --header-logo-width: 100px;
     --header-logo-height: 100px;
     --header-subtitle-width: 40dvw;
+    --header-subtitle-font-size: 1rem;
 
     --hero-slogan-width: 40dvw;
     --section-margin-top: 3rem;
@@ -46,9 +47,9 @@ body {
     background-size: 100%;
 }
 
-/* body * {
+body * {
     border: #0470B8 solid 1px;
-} */
+}
 
 body>section {
     padding-left: var(--x16-padding) !important;
