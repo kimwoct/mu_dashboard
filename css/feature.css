@@ -26,7 +26,7 @@
 .features-description {
     text-align: center;
     color: rgb(75, 85, 99);
-    padding: var(--x32-padding) 0;
+    padding: var(--x32-padding) 0 var(--x48-padding) 0;
 }
 
 .features-description p {

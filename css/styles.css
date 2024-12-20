@@ -1,8 +1,7 @@
  /* Banner Swiper */
 .banner-swiper {
     height: calc(var(--lottie-banner-height) - var(--logo-wrapper-height));
-    /* max-height: var(--lottie-banner-max-height); */
-    margin-bottom: var(--x24-padding);
+    margin-bottom: var(--x32-padding);
 }
 
 /* Swiper */
@@ -35,7 +34,7 @@
 }
 
 .swiper-slide-container .content{
-    padding: var(--x16-padding);
+    padding: var(--x24-padding) var(--x16-padding) var(--x16-padding) var(--x16-padding);
 }
 
 .swiper-slide-active {
@@ -379,11 +378,19 @@ swiper-pagination {
     }
 
     .features-container {
-        padding: 1rem 1rem !important;
+        padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
     }
 
-    .primary-secondary-container {
-        padding: 1rem 1rem !important;
+    .primary-secondary {
+        padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .primary-secondary-container{
+        padding: var(--x32-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .swiper-slide-container .content {
+        padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
     }
 
     .large-title {
@@ -403,11 +410,12 @@ swiper-pagination {
 
     .elementor-heading-title {
         /* padding: 1rem 0; */
-        font-size: 2rem;
+        font-size: var(--x24-padding) !important;
         text-wrap: balance;
         font-weight: 800;
         text-align: center;
         word-wrap: break-word;
+        padding-bottom: var(--x16-padding) !important;
     }
 
     .swiper{
@@ -418,12 +426,44 @@ swiper-pagination {
         padding-top: 2rem!important;
     }
 
+    .nt-flip-desc {
+        font-size: 20px !important;
+    }
+
     .start-learning {
-        padding: 2rem 0 !important;
+        padding: var(--x32-padding) 0 0 0 !important;
     }
 
     .contact {
         padding: 2rem 0 !important;
+    }
+
+    .contact-form-section {
+        padding: 0 var(--x24-padding) 0 var(--x24-padding) !important;
+    }
+
+    .submit-button{
+        font-size: 18px !important;
+        height: 2.5rem !important;
+        width: 6rem !important;
+        border-radius: 0.4rem !important;
+    }
+
+    .try-now-button {
+        text-align: center !important;
+        align-items: center !important;
+        font-size: 14px !important;
+        height: 2.5rem !important;
+        width: 16rem !important;
+        border-radius: 0.4rem !important
+    }
+
+    .suggestion-section{
+        /* padding: var(--x24-padding) var(--x24-padding) var(--x24-padding) var(--x24-padding) !important; */
+    }
+
+    .suggestion-text{
+        /* padding: 0 var(--x24-padding) var(--x24-padding) var(--x24-padding) !important; */
     }
 }
  

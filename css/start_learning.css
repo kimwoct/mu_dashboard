@@ -1,6 +1,6 @@
 /* Start Learning Section */
 .start-learning {
-    padding-bottom: 3rem;
+    padding-bottom: var(--x32-padding);
 }
 
 .start-learning > div {

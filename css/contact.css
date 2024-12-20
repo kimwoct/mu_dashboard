@@ -19,11 +19,12 @@
 
 .contact-grid {
     display: grid;
-    gap: var(--x24-padding);
+    gap: var(--x8-padding);
 }
 
 .contact-form-section {
-    padding: var(--x24-padding);
+    padding: var(--x24-padding) var(--x24-padding) 0 var(--x24-padding);
+    position: relative;
 }
 
 .contact-title {

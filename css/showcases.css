@@ -1,6 +1,6 @@
 /* Primary and Secondary Showcases Section */
 .primary-secondary {
-    padding: 3rem 0;
+    padding: var(--x8-padding) 0 var(--x32-padding) 0;
 }
 
 .primary-secondary>div {
