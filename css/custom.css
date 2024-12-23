@@ -2347,7 +2347,7 @@ body.admin-bar .home-onepage.has-pagination.pagination-dots .swiper-container-ho
 }
 
 /* flip card */
-.nt-flip-col{
+.nt-flip-col {
   width: 100%;
   cursor: pointer;
 }
@@ -2358,8 +2358,16 @@ body.admin-bar .home-onepage.has-pagination.pagination-dots .swiper-container-ho
   height:100%;
 }
 .nt-flip-title,
-.nt-flip-desc{
-    color: #fff;
+.nt-flip-desc {
+    color: #424242;
+    font-weight: 500;
+}
+.nt-flip-back .nt-flip-desc{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 auto
 }
 .nt-flip-icon{
     font-size: 30px;
@@ -2369,7 +2377,7 @@ body.admin-bar .home-onepage.has-pagination.pagination-dots .swiper-container-ho
     margin-bottom: 15px;
 }
 .nt-flip-desc{
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 .nt-flip-container{
@@ -2402,7 +2410,7 @@ body.admin-bar .home-onepage.has-pagination.pagination-dots .swiper-container-ho
     align-items: center;
     /* padding: 2rem; */
     overflow: hidden;
-    background: #ED9B06;
+    background: #FFD78E;
 }
 
 .nt-flip-back{

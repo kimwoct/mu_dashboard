@@ -1,0 +1,684 @@
+ /* Banner Swiper */
+.banner-swiper {
+    height: calc(var(--lottie-banner-height) - var(--logo-wrapper-height));
+    margin-bottom: var(--x32-padding);
+}
+
+/* Swiper */
+.swiper {
+    width: 100%;
+    height: calc(100% - var(--swiper-card-height) - var(--swiper-card-padding));
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-wrapper {
+    transition-timing-function: ease-in;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    will-change: transform;
+    display: flex !important;
+}
+
+.swiper-slide-container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.swiper-slide-container .content{
+    padding: var(--x24-padding) var(--x16-padding) var(--x16-padding) var(--x16-padding);
+}
+
+.swiper-slide-active {
+    z-index: 2;
+}
+
+.swiper-slide-prev {
+    z-index: 1;
+}
+
+.swiper-slide-next {
+    z-index: 1;
+}
+
+/* Slide Card */
+.slide-trigger-area {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slide-trigger-left {
+    left: 0;
+}
+
+.slide-trigger-right {
+    right: 0;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--x24-padding);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition-timing-function: ease-out;
+    background-color: white;
+}
+
+.swiper-slide-active .slide-content {
+    transform: translate3d(0, 0, 0);
+}
+
+.swiper-slide-prev .slide-content {
+    transform: translate3d(0, 0, 0);
+}
+
+.swiper-slide-next .slide-content {
+    transform: translate3d(0, 0, 0);
+}
+
+.slide-content img {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.slide-info {
+    text-align: center;
+    color: #05579F;
+}
+
+.slide-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.slide-info p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #6D6D6D;
+}
+
+.slide-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #7FBB2A;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.slide-btn:hover {
+    background: #6ca023;
+    transform: translateY(-2px);
+}
+
+.swiper-pagination-bullet-active {
+    background: #05579F;
+}
+
+swiper-pagination {
+    bottom: var(--swiper-pagination-bottom, 8px);
+}
+
+/* Portrait */
+/* 
+  ##Device = Tablets, iPads (Portrait)
+  ##Screen = B/w 1024px to 1366px
+*/
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+    /* CSS */
+    * {
+        /* Logo */
+        --header-wrapper-width: 57dvw !important;
+        /* Lottie-banner */
+        --lottie-tranlate-x: calc(15dvw) !important;
+        --lottie-translate-y: calc(-5dvh) !important;
+        --lottie-translate-y1: calc(5dvh) !important;
+        --lottie-scale: 0.5 !important;
+        --lottie-scale1: 1.5 !important;
+        --lottie-banner-height: 40dvh !important;
+        --lottie-banner-max-height:40dvh !important;
+        --hero-slogan-width: 55dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 2rem !important;
+    }
+
+    .header-subtitle {
+        max-width: 45dvw !important;
+        font-size: 1.5rem !important;
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large !important;
+    }
+
+}
+
+/* 
+  ##Device = Tablets, iPads (Portrait)
+  ##Screen = B/w 768px to 1023px
+*/
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+
+    /* CSS */
+    * { 
+        /* Logo */
+        --header-wrapper-width: 100dvw !important;
+        --header-wrapper-height: 5vh !important;
+        --header-logo-width: 15dvw !important;
+        --header-logo-height: 5vh !important;
+        /* Lottie-banner */
+        --lottie-tranlate-x: calc(15dvw) !important;
+        --lottie-translate-y: calc(-5dvh) !important;
+        --lottie-translate-y1: calc(5dvh) !important;
+        --lottie-scale: 0.5 !important;
+        --lottie-scale1: 1.5 !important;
+        --lottie-banner-height: 35dvh !important;
+        --lottie-banner-max-height: 35dvh !important;
+        --hero-slogan-width: 55dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 1.5rem !important;
+        /* Swiper */
+        --swiper-header-height: 2rem !important;
+        --swiper-card-height: 44px !important;
+        --swiper-card-padding: 32px !important;
+    }
+
+    .header-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        /* width: var(--logo-wrapper-width) !important; */
+        align-self: baseline;
+    }
+
+    .header-wrapper {
+        background-color: #EBEBEB;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .header-logo {
+        padding-left: 1rem;
+    }
+
+    .header-subtitle {
+        font-size: larger !important;
+        width: 70dvw !important;
+        align-self: center;
+        display: inline;
+    }
+
+    .elementor-heading-title {
+        font-size: var(--swiper-header-height);
+    }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Portrait)
+##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+
+    /* CSS */
+    * {
+        /* Logo */
+        --header-subtitle-width: 70dvw !important;
+        /* Lottie-banner */
+        --lottie-translate-x: calc(10dvw) !important;
+        --lottie-translate-y: calc(0dvh) !important;
+        --lottie-translate-y1: calc(10dvh) !important;
+        --lottie-scale: 1.0 !important;
+        --lottie-scale1: 2.0 !important;
+        --hero-slogan-width: 55dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 0.8rem !important;
+    }
+
+    .header-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        /* width: var(--logo-wrapper-width) !important; */
+        align-self: baseline;
+    }
+
+    .header-wrapper {
+        background-color: #EBEBEB;
+        width: 100dvw !important;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .header-logo {
+        padding-left: 1rem;
+    }
+
+    .header-subtitle {
+        font-size: larger !important;
+        /* width: 70dvw !important; */
+        align-self: center;
+        display: inline;
+    }
+
+    .elementor-heading-title {
+        font-size: x-large;
+    }
+
+    /* .hero-slogan {
+        width: 50vw;
+        bottom: 15%;
+        font-size: 1rem;
+    } */
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 480px
+*/
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+
+    /* CSS */
+    * {
+        /* Logo */
+        --header-wrapper-width: 100% !important;
+        --header-wrapper-height: auto !important;
+        --header-logo-width: 20dvw !important;
+        --header-logo-height: auto !important;
+        --header-subtitle-bottom: 15% !important;
+        --header-subtitle-font-size: 12px !important;
+        /* Lottie-banner */
+        --lottie-tranlate-x: calc(15dvw) !important;
+        --lottie-translate-y: calc(-5dvh) !important;
+        --lottie-translate-y1: calc(8dvh) !important;
+        --lottie-scale: 0.5 !important;
+        --lottie-scale1: 1.5 !important;
+        --lottie-banner-height: 35dvh !important;
+        --lottie-banner-max-height: 35dvh !important;
+        --hero-slogan-width: 55dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 0.8rem !important;
+        /* Swiper */
+        --swiper-header-height: 2rem !important;
+        --swiper-card-height: 44px !important;
+        --swiper-card-padding: 32px !important;
+    }
+
+    h1 {
+        display: block !important;
+        font-size: 1.3rem !important;
+        margin-top: 8px !important;
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    p {
+        display: block !important;
+        font-size: 1rem !important;
+        margin-top: 8px !important;
+        margin-bottom: 0em !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .header-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        /* max-width: var(--logo-wrapper-width) !important; */
+        align-self: baseline;
+    }
+
+    .header-wrapper {
+        background-color: #EBEBEB;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .header-logo {
+        padding-left: 1rem;
+    }
+
+    .features-container {
+        padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .primary-secondary {
+        padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .primary-secondary-container{
+        padding: var(--x32-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .swiper-slide-container .content {
+        padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .large-title {
+        display: none !important;
+    }
+
+    .small-title {
+        display: block !important;
+    }
+
+    .small-title.elementor-heading-title {
+        padding: 1rem 0 !important;
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .elementor-heading-title {
+        /* padding: 1rem 0; */
+        font-size: var(--x24-padding) !important;
+        text-wrap: balance;
+        font-weight: 800;
+        text-align: center;
+        word-wrap: break-word;
+        /* padding-bottom: var(--x16-padding) !important; */
+    }
+
+    .swiper{
+        height: calc(100% - 68px);
+    }
+
+    .primary-secondary {
+        padding-top: 2rem!important;
+    }
+
+    .nt-flip-desc {
+        font-size: 20px !important;
+    }
+
+    .start-learning {
+        padding: var(--x32-padding) 0 0 0 !important;
+    }
+
+    .contact {
+        padding: 2rem 0 !important;
+    }
+
+    .contact-form-section {
+        padding: 0 var(--x24-padding) 0 var(--x24-padding) !important;
+    }
+
+    .submit-button{
+        font-size: 18px !important;
+        height: 2.5rem !important;
+        width: 6rem !important;
+        border-radius: 0.4rem !important;
+    }
+
+    .try-now-button {
+        text-align: center !important;
+        align-items: center !important;
+        font-size: 14px !important;
+        height: 2.5rem !important;
+        width: 16rem !important;
+        border-radius: 0.4rem !important
+    }
+
+    .suggestion-section{
+        /* padding: var(--x24-padding) var(--x24-padding) var(--x24-padding) var(--x24-padding) !important; */
+    }
+
+    .suggestion-text{
+        /* padding: 0 var(--x24-padding) var(--x24-padding) var(--x24-padding) !important; */
+    }
+}
+ 
+/*
+##All Mobile Devices in Landscape mode
+##Device = Most of the Smartphones Mobiles (Landscape)
+##Screen = B/w 667px to 1023px
+*/
+@media (min-width: 667px) and (max-width: 1022px) and (orientation: landscape) {
+
+    /* CSS */
+    * {
+        /* Logo */
+        --header-wrapper-width: 50dvw !important;
+        --header-wrapper-height: auto !important;
+        --header-logo-width: 15dvw !important;
+        --header-logo-height: 100% !important;
+        --header-subtitle-bottom: 15% !important;
+        --header-subtitle-font-size: 14px !important;
+        /* Lottie-banner */
+        --lottie-tranlate-x: calc(20dvw) !important;
+        --lottie-translate-y: calc(0dvh) !important;
+        --lottie-translate-y1: calc(5dvh) !important;
+        --lottie-scale: 0.9 !important;
+        --lottie-scale1: 1.1 !important;
+        --lottie-banner-height: 60dvh !important;
+        --lottie-banner-max-height: 60dvh !important;
+        --hero-slogan-width: 50dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 1rem !important;
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+}
+
+@media (min-width: 1023px) and (orientation: landscape) {
+
+    /* CSS */
+    * {
+        /* Logo */
+        --header-wrapper-width: 50dvw !important;
+        --header-wrapper-height: auto !important;
+        --header-logo-width: 15dvw !important;
+        --header-logo-height: auto !important;
+        --header-subtitle-bottom: 15% !important;
+        --header-subtitle-font-size: 1.5rem !important;
+        /* Lottie-banner */
+        --lottie-tranlate-x: calc(20dvw) !important;
+        --lottie-translate-y: calc(-5dvh) !important;
+        --lottie-translate-y1: calc(15dvh) !important;
+        --lottie-scale: 0.6 !important;
+        --lottie-scale1: 1.1 !important;
+        --lottie-banner-height: 80dvh !important;
+        --lottie-banner-max-height:80dvh !important;
+        --hero-slogan-width: 50dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 2rem !important;
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+
+    /* .header-wrapper {
+        display: flex !important;
+        padding: 5px 0 !important;
+        text-align: left !important;
+        align-items: center;
+        padding: 10px;
+    } */
+/* 
+    .header-logo {
+        height: 6dvh !important;
+    } */
+/* 
+    .header-subtitle {
+        font-size: large !important;
+        align-self: center;
+        display: inline;
+        margin: 0 1rem;
+    } */
+
+    /* .hero-slogan {
+        width: 50vw;
+        bottom: 15%;
+        font-size: 2rem;
+    } */
+}
+
+/* 
+  ##Device = Tablets, Ipads Pro (landscape)
+  ##Screen = B/w 1366px x 1024px
+*/
+@media (min-width: 1366px) and (orientation: landscape) {
+
+    /* CSS */
+    * {
+        /* Logo */
+        --header-wrapper-width: 50dvw !important;
+        --header-wrapper-height: auto !important;
+        --header-logo-width: 12vw !important;
+        --header-logo-height: 6dvh !important;
+        --header-subtitle-width: 50dvw !important;
+        --header-subtitle-bottom: 15% !important;
+        --header-subtitle-font-size: 1.5rem !important;
+        /* Lottie-banner */
+        --lottie-tranlate-x: calc(20dvw) !important;
+        --lottie-translate-y: calc(-5dvh) !important;
+        --lottie-translate-y1: calc(20dvh) !important;
+        --lottie-scale: 0.8 !important;
+        --lottie-scale1: 1.0 !important;
+        --lottie-banner-height: 50dvh !important;
+        --lottie-banner-max-height: 50dvh !important;
+        --hero-slogan-width: 50dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 2rem !important;
+    }
+
+    /* .header-container {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+    .logo-wrapper {
+        align-self: baseline;
+    }
+
+    .header-wrapper {
+        background-color: #EBEBEB;
+        width: 100dvw !important;
+        text-align: left !important;
+        align-self: flex-start !important;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .header-logo {
+        padding-left: 1rem;
+        height: 6vh !important;
+    }
+
+    .header-subtitle {
+        align-self: center;
+        display: inline;
+    } */
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+
+    /* .header-wrapper {
+        display: flex !important;
+        text-align: left !important;
+        align-items: center;
+    } */
+
+    /* .header-logo {
+        height: 6dvh !important;
+    } */
+
+    /* .header-subtitle {
+        font-size: 2rem !important;
+        align-self: center;
+        display: inline;
+        margin: 0 1rem;
+    } */
+
+    /* .hero-slogan {
+        width: 50vw;
+        bottom: 15%;
+        font-size: 2rem;
+    } */
+}
+
+
+@media (min-width: 1500px) and (orientation: landscape) {
+
+    /* CSS */
+    * {
+        /* Logo */
+        --header-wrapper-width: 40dvw !important;
+        --header-wrapper-height: auto !important;
+        --header-logo-width: 10vw !important;
+        --header-logo-height: 5vh !important;
+        --header-subtitle-width: 50dvw !important;
+        --header-subtitle-bottom: 15% !important;
+        --header-subtitle-font-size: 2rem !important;
+        /* Lottie-banner */
+        --lottie-tranlate-x: calc(10dvw) !important;
+        --lottie-translate-y: calc(0dvh) !important;
+        --lottie-translate-y1: calc(10dvh) !important;
+        --lottie-scale: 0.8 !important;
+        --lottie-scale1: 1.0 !important;
+        --hero-slogan-width: 50dvw !important;
+        --hero-slogan-bottom: 15% !important;
+        --hero-slogan-font-size: 2rem !important;
+    }
+
+    .elementor-heading-title {
+        font-size: xx-large;
+    }
+
+    /* .hero-slogan {
+        width: 50dvw;
+        bottom: 25dvh;
+        font-size: 2rem;
+    } */
+}
+
+@media screen and (max-aspect-ratio:3/2) {
+    /* .primary-secondary .swiper-slide{
+        min-height: 45dvh;
+        height: auto;
+    } */
+}

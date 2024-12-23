@@ -1,0 +1,29 @@
+/* Lottie-banner */
+.lottie-banner {
+    height: var(--lottie-banner-height);
+    max-height: var(--lottie-banner-max-height);
+}
+
+#lottie {
+    transform: translate3d(var(--lottie-tranlate-x), var(--lottie-translate-y), 0px) scale(var(--lottie-scale)) !important;
+}
+
+#lottie1 {
+    transform: translate3d(0px, var(--lottie-translate-y1), 0px) scale(var(--lottie-scale1)) !important;
+}
+
+#sand_background {
+    height: auto;
+}
+
+.hero-slogan {
+    font-size: var(--hero-slogan-font-size);
+    bottom: var(--hero-slogan-bottom);
+    width: var(--hero-slogan-width);
+    position: absolute;
+    display: block;
+    color: white;
+    text-align: left;
+    z-index: 999;
+    padding-left: var(--x24-padding);
+}
