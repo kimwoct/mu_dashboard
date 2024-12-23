@@ -575,7 +575,7 @@ swiper-pagination {
         --lottie-tranlate-x: calc(20dvw) !important;
         --lottie-translate-y: calc(-5dvh) !important;
         --lottie-translate-y1: calc(20dvh) !important;
-        --lottie-scale: 0.6 !important;
+        --lottie-scale: 0.8 !important;
         --lottie-scale1: 1.0 !important;
         --lottie-banner-height: 50dvh !important;
         --lottie-banner-max-height: 50dvh !important;
@@ -647,10 +647,10 @@ swiper-pagination {
     /* CSS */
     * {
         /* Logo */
-        --header-wrapper-width: 55dvw !important;
+        --header-wrapper-width: 40dvw !important;
         --header-wrapper-height: auto !important;
         --header-logo-width: 10vw !important;
-        --header-logo-height: 10vh !important;
+        --header-logo-height: 5vh !important;
         --header-subtitle-width: 50dvw !important;
         --header-subtitle-bottom: 15% !important;
         --header-subtitle-font-size: 2rem !important;
@@ -658,7 +658,7 @@ swiper-pagination {
         --lottie-tranlate-x: calc(10dvw) !important;
         --lottie-translate-y: calc(0dvh) !important;
         --lottie-translate-y1: calc(10dvh) !important;
-        --lottie-scale: 0.6 !important;
+        --lottie-scale: 0.8 !important;
         --lottie-scale1: 1.0 !important;
         --hero-slogan-width: 50dvw !important;
         --hero-slogan-bottom: 15% !important;
