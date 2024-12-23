@@ -415,7 +415,7 @@ swiper-pagination {
         font-weight: 800;
         text-align: center;
         word-wrap: break-word;
-        padding-bottom: var(--x16-padding) !important;
+        /* padding-bottom: var(--x16-padding) !important; */
     }
 
     .swiper{
