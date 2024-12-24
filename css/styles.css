@@ -394,7 +394,7 @@ swiper-pagination {
     }
 
     .swiper-wrapper {
-        padding-bottom: var(--x32-padding) !important;
+        padding-bottom: var(--x16-padding) !important;
     }
 
     /* .swiper-slide {
@@ -436,7 +436,12 @@ swiper-pagination {
     }
 
     .start-learning {
-        padding: var(--x32-padding) 0 0 0 !important;
+        padding: var(--x32-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .start-learning .word {
+        font-size: 21.5px !important;
+        text-align: center !important;
     }
 
     .contact {
@@ -453,6 +458,10 @@ swiper-pagination {
         width: 6rem !important;
         border-radius: 0.4rem !important;
     }
+
+    /* .learning-grid .nt-flip-back .nt-flip-inner {
+        padding: var(--x16-padding) var(--x16-padding) var(--x16-padding) var(--x16-padding) !important;
+    } */
 
     .try-now-button {
         text-align: center !important;

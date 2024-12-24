@@ -127,7 +127,6 @@
 .try-now-button {
     width: auto;
     padding: var(--x16-padding) var(--x24-padding);
-    margin-top: auto;
     background: rgb(139, 195, 74);
     color: white;
     border: none;
