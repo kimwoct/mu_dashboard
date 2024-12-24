@@ -136,6 +136,7 @@
     font-size: 1.125rem;
     cursor: pointer;
     transition: all 0.2s ease;
+    align-self: center;
 }
 
 .try-now-button:hover {

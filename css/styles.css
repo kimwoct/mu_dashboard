@@ -333,7 +333,7 @@ swiper-pagination {
         /* Swiper */
         --swiper-header-height: 2rem !important;
         --swiper-card-height: 44px !important;
-        --swiper-card-padding: 32px !important;
+        --swiper-card-padding: 0px !important;
     }
 
     h1 {
@@ -385,12 +385,25 @@ swiper-pagination {
         padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
     }
 
-    .primary-secondary-container{
+    .primary-secondary-container {
         padding: var(--x32-padding) var(--x16-padding) 0 var(--x16-padding) !important;
     }
 
     .swiper-slide-container .content {
         padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: var(--x32-padding) !important;
+    }
+
+    /* .swiper-slide {
+        background-color: red !important;
+    } */
+
+    .swiper {
+        height: auto !important;
+        background-color: rgb(245, 255, 230);
     }
 
     .large-title {
@@ -416,14 +429,6 @@ swiper-pagination {
         text-align: center;
         word-wrap: break-word;
         /* padding-bottom: var(--x16-padding) !important; */
-    }
-
-    .swiper{
-        height: calc(100% - 68px);
-    }
-
-    .primary-secondary {
-        padding-top: 2rem!important;
     }
 
     .nt-flip-desc {
@@ -506,10 +511,11 @@ swiper-pagination {
     /* CSS */
     * {
         /* Logo */
-        --header-wrapper-width: 50dvw !important;
+        --header-wrapper-width: auto !important;
         --header-wrapper-height: auto !important;
         --header-logo-width: 15dvw !important;
         --header-logo-height: auto !important;
+        --header-subtitle-width: auto !important;
         --header-subtitle-bottom: 15% !important;
         --header-subtitle-font-size: 1.5rem !important;
         /* Lottie-banner */
@@ -564,11 +570,11 @@ swiper-pagination {
     /* CSS */
     * {
         /* Logo */
-        --header-wrapper-width: 50dvw !important;
+        --header-wrapper-width: auto !important;
         --header-wrapper-height: auto !important;
         --header-logo-width: 12vw !important;
         --header-logo-height: 6dvh !important;
-        --header-subtitle-width: 50dvw !important;
+        --header-subtitle-width: auto !important;
         --header-subtitle-bottom: 15% !important;
         --header-subtitle-font-size: 1.5rem !important;
         /* Lottie-banner */
@@ -647,11 +653,11 @@ swiper-pagination {
     /* CSS */
     * {
         /* Logo */
-        --header-wrapper-width: 40dvw !important;
+        --header-wrapper-width: auto !important;
         --header-wrapper-height: auto !important;
         --header-logo-width: 10vw !important;
         --header-logo-height: 5vh !important;
-        --header-subtitle-width: 50dvw !important;
+        --header-subtitle-width: auto !important;
         --header-subtitle-bottom: 15% !important;
         --header-subtitle-font-size: 2rem !important;
         /* Lottie-banner */
