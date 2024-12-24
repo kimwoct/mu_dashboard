@@ -155,7 +155,7 @@ swiper-pagination {
         /* Lottie-banner */
         --lottie-tranlate-x: calc(15dvw) !important;
         --lottie-translate-y: calc(-5dvh) !important;
-        --lottie-translate-y1: calc(5dvh) !important;
+        --lottie-translate-y1: calc(7dvh) !important;
         --lottie-scale: 0.5 !important;
         --lottie-scale1: 1.5 !important;
         --lottie-banner-height: 40dvh !important;
@@ -174,6 +174,11 @@ swiper-pagination {
         font-size: xx-large !important;
     }
 
+    #lottie1 {
+        bottom: 0px !important;
+        position: absolute !important;
+        height: 100% !important;
+    }
 }
 
 /* 
