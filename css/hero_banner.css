@@ -1,6 +1,6 @@
 /* Lottie-banner */
 .lottie-banner {
-    height: var(--lottie-banner-height);
+    /* height: var(--lottie-banner-height); */
     max-height: var(--lottie-banner-max-height);
 }
 
