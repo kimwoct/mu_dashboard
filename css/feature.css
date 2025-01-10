@@ -66,3 +66,58 @@
 .nt-flip-desc {
     align-content: center;
 }
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-list-card {
+    padding: 0 2.5rem;
+    /* border: 1px solid red; */
+    /* background: white; */
+    /* border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
+    transition: all 0.3s ease;
+}
+
+/* .feature-list-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+} */
+
+.feature-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.icon-wrapper {
+    /* background-color: #e6f0ff; */
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.icon {
+    width: 88px;
+    height: 88px;
+    color: #2563eb;
+}
+
+.feature-text h3 {
+    color: #5B5B5B;
+    font-size: 24px;
+    font-weight: 600;
+    /* margin-bottom: 0.25rem; */
+}
+
+.feature-text p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}

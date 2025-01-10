@@ -179,6 +179,23 @@ swiper-pagination {
         position: absolute !important;
         height: 100% !important;
     }
+
+    .feature-list-card {
+        padding: 0 6rem;
+        transition: all 0.3s ease;
+    }
+
+    .features-container .feature-text h3 {
+        /* color: #25ebb0; */
+        font-size: 20px !important;
+        font-weight: 500 !important;
+    }
+
+    .features-container .icon {
+        width: 56px;
+        height: 56px;
+        color: #2563eb;
+    }
 }
 
 /* 
@@ -250,6 +267,23 @@ swiper-pagination {
     .elementor-heading-title {
         font-size: var(--swiper-header-height);
     }
+
+    .feature-list-card {
+        padding: 0 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .features-container .feature-text h3 {
+        /* color: #eb7425; */
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+
+    .features-container .icon {
+        width: 48px;
+        height: 48px;
+        color: #2563eb;
+    }
 }
 
 /* 
@@ -310,9 +344,26 @@ swiper-pagination {
         height: 100% !important;
         /* transform: translate3d(0px, var(--lottie-translate-y1), 0px) scale(var(--lottie-scale1)) !important; */
     }
-
+    
     .elementor-heading-title {
         font-size: x-large;
+    }
+
+    .feature-list-card {
+        padding: 0;
+        transition: all 0.3s ease;
+    }
+
+    .features-container .feature-text h3 {
+        /* color: #2563eb; */
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+
+    .features-container .icon {
+        width: 48px;
+        height: 48px;
+        color: #2563eb;
     }
 
     /* .hero-slogan {
@@ -403,6 +454,21 @@ swiper-pagination {
 
     .features-container {
         padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+    }
+
+    .feature-list-card{
+        padding: 0;
+    }
+
+    .features-container .feature-text h3 {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+
+    .features-container .icon {
+        width: 40px;
+        height: 40px;
+        color: #2563eb;
     }
 
     .primary-secondary {

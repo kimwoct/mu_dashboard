@@ -37,6 +37,19 @@
     --x8-padding: 8px;
 }
 
+.love-ya-like-a-sister-regular {
+    font-family: "Love Ya Like A Sister", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.inter-regular {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -48,9 +61,9 @@ body {
     background-size: 100%;
 }
 
-body * {
+/* body * {
     border: #0470B8 solid 1px;
-}
+} */
 
 body>section {
     padding-left: var(--x16-padding) !important;
