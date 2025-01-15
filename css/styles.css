@@ -433,6 +433,11 @@ swiper-pagination {
         align-self: baseline;
     }
 
+    .logo-image{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
     .header-wrapper {
         background-color: #EBEBEB;
         text-align: left !important;
@@ -589,15 +594,20 @@ swiper-pagination {
         --header-subtitle-font-size: 14px !important;
         /* Lottie-banner */
         --lottie-tranlate-x: calc(20dvw) !important;
-        --lottie-translate-y: calc(0dvh) !important;
-        --lottie-translate-y1: calc(0dvh) !important;
-        --lottie-scale: 0.9 !important;
+        --lottie-translate-y: calc(5dvh) !important;
+        --lottie-translate-y1: calc(-15dvh) !important;
+        --lottie-scale: 1.2 !important;
         --lottie-scale1: 1.1 !important;
         /* --lottie-banner-max-height: 60dvh !important; */
         /* --lottie-banner-height: 60dvh !important; */
         --hero-slogan-width: 50dvw !important;
         --hero-slogan-bottom: 15% !important;
         --hero-slogan-font-size: 1rem !important;
+    }
+
+    .logo-image{
+        width: 50% !important;
+        height: 50% !important;
     }
 
     .elementor-heading-title {
@@ -610,12 +620,12 @@ swiper-pagination {
     }
 
     #ocean_background { /* for ocean background */
-        width: 100dvw;
-        height: 100%;
-        background-size: auto !important;
+        width: 100dvw !important;
+        height: 70dvh !important;
+        background-size: cover !important;
         background-repeat: repeat-x !important;
         position: relative !important;
-        top: 0px;
+        /* top: 50px; */
     }
 }
 
