@@ -1,3 +1,14 @@
+
+
+.description {
+    padding-left: var(--x16-padding) !important;
+    padding-right: var(--x16-padding) !important;
+    max-width: 1152px;
+    margin: 0 auto;
+    border-radius: var(--bg-border-radius) var(--bg-border-radius) 0 0;
+    color: var(--primary-text-color);
+ }
+ 
  /* Banner Swiper */
 .banner-swiper {
     height: calc(var(--lottie-banner-height) - var(--logo-wrapper-height));

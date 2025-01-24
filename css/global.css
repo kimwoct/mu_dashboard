@@ -35,6 +35,10 @@
     --x24-padding: 24px;
     --x16-padding: 16px;
     --x8-padding: 8px;
+
+    --primary-text-color: #4E4B47;
+    --secondary-text-color: #9F9F9F;
+    --tertiary-text-color: #CFCFCF;
 }
 
 .love-ya-like-a-sister-regular {

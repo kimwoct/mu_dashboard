@@ -1,0 +1,39 @@
+/* Contact Section */
+.join-our-pilot {
+    padding-bottom: var(--x24-padding);
+}
+
+.join-our-pilot >div {
+    margin: 0 auto;
+}
+
+.join-our-pilot-card {
+    max-width: 1152px;
+    margin: 0 auto;
+    background: rgba(229, 241, 212, 1);
+    border-radius: var(--bg-border-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.join-our-pilot-grid {
+    display: grid;
+    gap: var(--x8-padding);
+}
+
+.join-our-pilot-form-section {
+    padding: var(--x24-padding) var(--x24-padding) 0 var(--x24-padding);
+    position: relative;
+}
+
+.join-our-pilot-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(26, 113, 171, 1);
+    margin-bottom: var(--x24-padding);
+}
+
+.join-our-pilot-cta {
+    text-align: center;
+}

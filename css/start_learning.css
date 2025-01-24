@@ -22,7 +22,7 @@
 .learning-grid {
     display: grid;
     gap: var(--x24-padding);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
 .learning-image {
