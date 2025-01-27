@@ -97,6 +97,39 @@ p {
     margin-right: 0;
 }
 
+ul {
+    /* background: #3399ff; */
+    list-style-type: none;
+    /* margin: 0 48px 0 48px; */
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul li {
+    /* background: #cce5ff; */
+    color: rgba(0, 0, 0, 1);
+    margin: 0px 48px 0px 48px;
+    font-size: var(--x16-font-size);
+    font-weight: 400;
+    line-height: 40px;
+    list-style-type: none;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 svg {
     width: 100%;
     /* Fill container width */
