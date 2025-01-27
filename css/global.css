@@ -98,29 +98,42 @@ p {
 }
 
 ul {
-    /* background: #3399ff; */
     list-style-type: none;
-    /* margin: 0 48px 0 48px; */
     margin: 0;
     padding: 0;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-style: normal;
+    counter-reset: foo;
+    display: table;
+    padding: 0 var(--x48-padding);
 }
 
-ul li {
-    /* background: #cce5ff; */
-    color: rgba(0, 0, 0, 1);
+ul > li {
     margin: 0px 48px 0px 48px;
-    font-size: var(--x16-font-size);
-    font-weight: 400;
-    line-height: 40px;
-    list-style-type: none;
+    /* font-size: 1.5rem; */
+    /* line-height: 40px; */
     font-family: "Inter", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-style: normal;
+    display: table-row;
+}
+ul > li::before {
+    margin-left: 24px;
+    /* font-size: 1.5rem; */
+    /* line-height: 40px; */
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    content: ".";
+    display: table-cell;
+    text-align: right;
+    padding-right: .3em;
+    content: "•\00a0\00a0";
+    display: table-cell; /* aha! */
+    text-align: right;
 }
 
 input {
