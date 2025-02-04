@@ -138,7 +138,7 @@
     </div>
 
     <div class="description">
-        <h2 style="font-size: 2.0rem; font-weight: 600; text-align: center; line-height: 36px;">Transform the <a style="color: #1A71AB; font-size: 2.0rem; font-weight: 600; text-align: center; line-height: 36px;" href="URL_HERE">Open English Textbook series</a> into interactive, online and multimedia components, featuring videos animations, AI Chatbot, gamified learning, and self-directed learning.</h2>
+        <h2 style="font-size: 2.0rem; font-weight: 600; text-align: center; line-height: 36px;">Transform the <a style="color: #1A71AB; font-size: 2.0rem; font-weight: 600; text-align: center; line-height: 36px;" href="https://www.opentextbooks.org.hk/">Open English Textbook series</a> into interactive, online and multimedia components, featuring videos animations, AI Chatbot, gamified learning, and self-directed learning.</h2>
     </div>
 
     <!-- Features Section -->
@@ -855,11 +855,13 @@
                     <div class="contact-form-section">
                         <h2 class="contact-title">Contact Us</h2>
                         <form class="form-group" id="contactForm">
-                            <input type="text" placeholder="Name" name="name" required>
-                            <input type="email" placeholder="Email" name="email" required>
-                            <textarea placeholder="Message" name="message" required></textarea>
-                            <button type="submit" class="submit-button" id="submitButton">Send</button>
+                            <input id="name" type="text" placeholder="Name" name="name" required>
+                            <input id="email" type="email" placeholder="Email" name="email" required>
+                            <textarea id="message" placeholder="Message" name="message" required></textarea>
+                            <button type="submit" class="submit-button" id="submitButton" onclick="sendEmail()">Send</button>
                         </form>
+                        <p id="responseMessage"></p>
+                        <script src="/js/emailClient.js"></script>
                     </div>
                 </div>
             </div>
