@@ -19,7 +19,7 @@ async function sendEmail() {
 
     try {
         // Send POST request to the API
-        const response = await fetch('http://127.0.0.1:8081/api/email/send', {
+        const response = await fetch('https://www-api.hkmu-oasis.org/api/email/send', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

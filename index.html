@@ -861,6 +861,23 @@
                             <button type="submit" class="submit-button" id="submitButton" onclick="sendEmail()">Send</button>
                         </form>
                         <p id="responseMessage"></p>
+                        <script>
+                            // Function to check if all required fields are filled
+                            function checkFields() {
+                                const email = document.getElementById('email').value;
+                                const name = document.getElementById('name').value;
+                                const message = document.getElementById('message').value;
+                                const submitButton = document.getElementById('submitButton');
+                        
+                                // Enable the button if all fields are filled
+                                submitButton.disabled = !(email && name && message);
+                            }
+                        
+                            // Add event listeners to input fields
+                            document.getElementById('email').addEventListener('input', checkFields);
+                            document.getElementById('name').addEventListener('input', checkFields);
+                            document.getElementById('message').addEventListener('input', checkFields);
+                        </script>
                         <script src="/js/emailClient.js"></script>
                     </div>
                 </div>
