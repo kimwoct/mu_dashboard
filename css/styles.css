@@ -434,6 +434,11 @@ swiper-pagination {
         margin-right: 0 !important;
     }
 
+    section>div {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
     .header-container {
         flex-direction: column !important;
         padding: 0 !important;
@@ -442,6 +447,11 @@ swiper-pagination {
     .logo-wrapper {
         /* max-width: var(--logo-wrapper-width) !important; */
         align-self: baseline;
+    }
+    
+    .logo-image{
+        width: 100%;
+        height: auto;
     }
 
     .header-wrapper {
@@ -483,7 +493,7 @@ swiper-pagination {
     }
 
     .primary-secondary {
-        padding: var(--x16-padding) var(--x16-padding) 0 var(--x16-padding) !important;
+        padding: var(--x32-padding) var(--x16-padding) 0 var(--x16-padding) !important;
     }
 
     .primary-secondary-container {
@@ -545,8 +555,16 @@ swiper-pagination {
         text-align: center !important;
     }
 
+    .learning-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .join-our-pilot {
+        padding: var(--x32-padding) var(--x16-padding) 0 var(--x16-padding)!important;
+    }
+
     .contact {
-        padding: 2rem 0 !important;
+        padding: var(--x32-padding) var(--x16-padding) 0 var(--x16-padding)!important;
     }
 
     .contact-form-section {
@@ -554,9 +572,8 @@ swiper-pagination {
     }
 
     .submit-button{
+        width: 100% !important;
         font-size: 18px !important;
-        height: 2.5rem !important;
-        width: 6rem !important;
         border-radius: 0.4rem !important;
     }
 
@@ -567,18 +584,7 @@ swiper-pagination {
     .try-now-button {
         text-align: center !important;
         align-items: center !important;
-        font-size: 14px !important;
-        height: 2.5rem !important;
-        width: 16rem !important;
         border-radius: 0.4rem !important
-    }
-
-    .suggestion-section{
-        /* padding: var(--x24-padding) var(--x24-padding) var(--x24-padding) var(--x24-padding) !important; */
-    }
-
-    .suggestion-text{
-        /* padding: 0 var(--x24-padding) var(--x24-padding) var(--x24-padding) !important; */
     }
 }
  
@@ -613,6 +619,11 @@ swiper-pagination {
 
     .elementor-heading-title {
         font-size: xx-large;
+    }
+
+    .logo-image{
+        width: 50%;
+        height: auto;
     }
 
     #lottie1 {

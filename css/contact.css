@@ -68,12 +68,12 @@
 }
 
 .submit-button {
-    width: 8rem;
-    height: 3.5rem;
+    width: 280px;
+    padding: var(--x16-padding) var(--x24-padding);
     background: rgb(139, 195, 74);
     color: white;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     font-weight: 500;
     font-size: 1.125rem;
     cursor: pointer;
