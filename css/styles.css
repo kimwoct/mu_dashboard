@@ -570,6 +570,10 @@ swiper-pagination {
     .contact-form-section {
         padding: 0 var(--x24-padding) 0 var(--x24-padding) !important;
     }
+    .try-now-button{
+        font-size: 0.8rem;
+        margin: var(--x8-padding) !important;
+    }
 
     .submit-button{
         width: 100% !important;
@@ -582,6 +586,7 @@ swiper-pagination {
     } */
 
     .try-now-button {
+        max-width: 370px !important;
         text-align: center !important;
         align-items: center !important;
         border-radius: 0.4rem !important
