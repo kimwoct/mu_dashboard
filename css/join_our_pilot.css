@@ -7,7 +7,12 @@
     margin: 0 auto;
 }
 
+/* .join-our-pilot-container {
+    padding: 2.5rem 0 16px 0;
+} */
+
 .join-our-pilot-card {
+    padding: 2.5rem 0 16px 0;
     max-width: 1152px;
     margin: 0 auto;
     background: rgba(229, 241, 212, 1);
