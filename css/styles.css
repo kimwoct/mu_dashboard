@@ -424,6 +424,19 @@ swiper-pagination {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    h2>a {
+        font-size: 1.4rem !important;
+    }
+
+    ul li {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+    }
     
     p {
         display: block !important;
