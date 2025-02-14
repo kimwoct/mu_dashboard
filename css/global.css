@@ -74,10 +74,10 @@ body>section {
     padding-right: var(--x16-padding) !important;
 }
 
-section>div {
+/* section>div {
     padding-left: var(--x16-padding) !important;
     padding-right: var(--x16-padding) !important;
-}
+} */
 
 h1 {
     display: block;
