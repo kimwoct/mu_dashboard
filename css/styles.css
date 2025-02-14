@@ -418,12 +418,18 @@ swiper-pagination {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
+    .description {
+        padding-bottom: var(--x16-padding) !important;
+    }
     h2 {
-        font-size: 1.2rem !important;
+        font-size: 0.9rem !important;
+        /* line-height: 1.2rem !important; */
+        line-height: 1.6em !important;
     }
 
     h2 > a {
-        font-size: 1.3rem !important;
+        font-size: 0.9rem !important;
+        line-height: 1.6em !important;
     }
 
     ul li {
