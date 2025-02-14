@@ -424,6 +424,19 @@ swiper-pagination {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    h2>a {
+        font-size: 1.4rem !important;
+    }
+
+    ul li {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+    }
     
     p {
         display: block !important;
@@ -570,9 +583,24 @@ swiper-pagination {
     .contact-form-section {
         padding: 0 var(--x24-padding) 0 var(--x24-padding) !important;
     }
+
     .try-now-button{
         font-size: 0.8rem;
         margin: var(--x8-padding) !important;
+    }
+
+    .suggestion-section{
+        padding: var(--x16-padding) var(--x16-padding) var(--x24-padding) var(--x16-padding)!important;
+    }
+
+    .suggestion-title{
+        font-size: 1.2rem !important;
+    }
+
+    .share-feedback-button{
+        font-size: 0.8rem;
+        margin: var(--x8-padding) !important;
+        min-width: 300px !important;
     }
 
     .submit-button{

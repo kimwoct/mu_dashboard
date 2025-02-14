@@ -1,0 +1,59 @@
+.try-now-button {
+    width: auto;
+    padding: var(--x16-padding) var(--x24-padding);
+    background: rgb(139, 195, 74);
+    color: white;
+    border: none;
+    border-radius: var(--x8-padding);
+    font-weight: 500;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: center;
+}
+
+.try-now-button:hover {
+    background: rgb(124, 179, 66);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.share-feedback-button {
+    min-width: 370px;
+    padding: var(--x16-padding) var(--x24-padding);
+    background: rgb(139, 195, 74);
+    color: white;
+    border: none;
+    border-radius: var(--x8-padding);
+    font-weight: 500;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: center;
+}
+
+.share-feedback-button:hover {
+    background: rgb(124, 179, 66);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.join-us-button {
+    min-width: 280px !important;
+    padding: var(--x16-padding) var(--x24-padding);
+    background: rgb(139, 195, 74);
+    color: white;
+    border: none;
+    border-radius: var(--x8-padding);
+    font-weight: 500;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-self: center;
+}
+
+.join-us-button:hover {
+    background: rgb(124, 179, 66);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
